@@ -5,8 +5,7 @@ import DarkModeToggle from '../../UiComponents/DarkModeToggle';
 
 function Header() {
   return (
-   <div>
-      <DarkModeToggle />
+   <div className="header-container">
       <div className="grid-container">
          <div className="title">
             <span className="first-name">Luca Mattes </span>
@@ -17,8 +16,10 @@ function Header() {
             <CircularImage className="profile-image" src={`${process.env.PUBLIC_URL}/images/profile-image.jpg`} alt="Luca Wiehe" />
          </div>
       </div>
+      <div className="dark-toggle">
+         <DarkModeToggle />
+      </div>
    </div>
-   
   );
 }
 

@@ -16,7 +16,6 @@
 .overview-cell {
    display: flex;
    color: var(--text_color);
-   padding: 16px;
 }
  
 .left {
@@ -29,4 +28,17 @@
    background-color: var(--background_color_secondary);
    transition: background-color 0.6s;
    border-radius: 16px;
+   padding: 16px;
+}
+
+@media (max-width: 720px) {
+   .overview-grid {
+      grid-template-rows: auto;
+      grid-template-columns: 100%;
+      margin-top: 0;
+   }
+
+   .left {
+      height: fit-content;
+   }
 }
