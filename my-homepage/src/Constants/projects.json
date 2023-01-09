@@ -22,7 +22,7 @@
       "src": "homepage-1.png",
       "year": "2023",
       "goal": "This project aims at giving interested people an overview of projects I have created.",
-      "description": "You are currently on my homepage. To create this homepage, I used React.js supported by a portion of CSS code to make it visually appealing. In the future, I will add responsiveness to this homepage to make it invariant to changes in display formats.",
+      "description": "You are currently on my test homepage. To create this homepage, I used React.js supported by a portion of CSS code to make it visually appealing. In the future, I will add responsiveness to this homepage to make it invariant to changes in display formats.",
       "languages": "JavaScript",
       "backgroundStyle": "linear-gradient(to top, #0e131a, #191f28)"
    }
