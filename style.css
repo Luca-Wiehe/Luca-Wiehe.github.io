@@ -1,0 +1,47 @@
+@import '../src/App.css';
+@import '../src/CircularImage.css';
+@import '../src/DarkModeToggle.css';
+@import '../src/Header.css';
+@import '../src/index.css';
+@import '../src/Overview.css';
+@import '../src/KpiGrid.css';
+@import '../src/Views/Body/Projects.css';
+
+:root {
+   /* Global element colors */
+   --background_light: #f9f9f9;
+   --background_light_secondary: #edeef3;
+   --background_light_tertiary: #ffffff;
+
+   --accent_color1_light: #7347ee;
+   --accent_color2_light: #ff8e65;
+   --accent_color3_light: #00cce7;
+   --accent_color4_light: #fac23d;
+
+   --background_dark: #0e131a;
+   --background_dark_secondary: #191f28;
+   --background_dark_tertiary: #0f0f0f;
+
+   --accent_color1_dark: #4077c9;
+   --accent_color2_dark: #4fd3b1;
+   --accent_color3_dark: #216757;
+   --accent_color4_dark: #a4564d;
+
+   /* Global text colors */
+   --text_light: #000000;
+   --text_light_secondary: #3f3f3f;
+
+   --text_dark: #ffffff;
+   --text_dark_secondary: #e3e3e3;
+
+   /* Currently used color scheme */
+   --background_color: var(--background_light);
+   --background_color_secondary: var(--background_light_secondary);
+   --background_color_tertiary: var(--background_light_tertiary);
+   --text_color: var(--text_light);   
+   --text_color_secondary: var(--text_light_secondary);   
+   --accent_color1: var(--accent_color1_light);
+   --accent_color2: var(--accent_color2_light);
+   --accent_color3: var(--accent_color3_light);
+   --accent_color4: var(--accent_color4_light);
+}
