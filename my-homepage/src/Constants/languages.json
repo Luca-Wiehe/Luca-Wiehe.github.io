@@ -1,0 +1,26 @@
+{
+   "Python": {
+      "percentage": 0.9,
+      "description": "I learned Python through a mixture of lectures in university and a variety of programming projects. My project studies on paper recommendations and my bachelor's thesis on author interdisciplinarity - both with a heavy focus on Natural Language Processing and Machine Learning - were written in Python."
+   },
+   "JavaScript": {
+      "percentage": 0.8,
+      "description": "JS description"
+   },
+   "Java": {
+      "percentage": 0.7,
+      "description": "Java description"
+   },
+   "R": {
+      "percentage": 0.5,
+      "description": "R description"
+   },
+   "C": {
+      "percentage": 0.3,
+      "description": "C description"
+   },
+   "OCaml": {
+      "percentage": 0.2,
+      "description": "OCaml description"
+   }
+}

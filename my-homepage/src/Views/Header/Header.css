@@ -1,0 +1,54 @@
+.grid-container {
+   display: grid;
+   width: 60%;
+   height: 75px;
+   grid-template-columns: auto 125px;
+   grid-template-rows: 75% 25%;
+   grid-template-areas: 
+     "title profile-image"
+     "subtitle profile-image";
+   text-align: center;
+   margin-left: 20%;
+   margin-top: -40px;
+   color: var(--text_color);
+ }
+ 
+ .title {
+   grid-area: title;
+ }
+ 
+ .subtitle {
+   grid-area: subtitle;
+   margin-top: -1px;
+   font-weight: bolder;
+ }
+
+ .profile-image-container {
+   height: 75px;
+   width: 75px;
+ }
+ 
+ .profile-image {
+   grid-area: profile-image;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ 
+ .profile-image img {
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+ }
+
+ .first-name, .surname {
+   font-size: 40px;
+ }
+ 
+ .first-name {
+   font-weight: normal;
+ }
+ 
+ .surname {
+   font-weight: bolder;
+ }

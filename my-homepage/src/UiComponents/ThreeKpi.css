@@ -1,0 +1,30 @@
+.container {
+   height: 100%;
+   width: 100%;
+   display: grid;
+   grid-template-rows: 70% 30%;
+   grid-template-columns: rep(2, 50%);
+   grid-gap: 8px;
+ }
+ 
+ .row1 {
+   display: grid;
+   grid-template-rows: 80% 20%;
+   place-items: center;
+ }
+
+ .large-header {
+   font-size: 3em;
+ }
+ 
+ .row2 {
+   display: grid;
+   grid-template-columns: 50% 50%;
+ }
+ 
+ .kpi {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ 

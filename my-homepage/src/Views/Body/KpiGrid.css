@@ -1,0 +1,76 @@
+.kpi-grid {
+   display: grid;
+   height: 100%;
+   width: 100%;
+   grid-template-rows: 30px 100px 100px 30px 1fr;
+   grid-template-columns: repeat(2, calc(50% - 8px));
+   grid-gap: 16px;
+}
+
+.kpi-header {
+   grid-column: 1/3;
+   display: flex;
+   align-items: center;
+   font-weight: bolder;
+   font-size: 18px;
+}
+
+.kpi-cell {
+   border-radius: 16px;
+   padding: 16px;
+   color: white;
+   font-weight: bolder;
+}
+
+.accent1 {
+   background: linear-gradient(to right, #a389eb, #7347ee);
+}
+
+.accent2 {
+   background: linear-gradient(to right, #ff8e65, #ff0000);
+}
+
+.accent3 {
+   background: linear-gradient(to right, #16b5bd, #008d9f);
+}
+
+.accent4 {
+   background: linear-gradient(to right, #fac23d, #ff9933);
+}
+
+.programming-languages-list {
+   grid-column: 1/3;
+   display: flex;
+   flex-direction: column;
+}
+
+.accounts-list {
+   grid-column: 1/3;
+   display: flex;
+   flex-direction: row;
+   height: 100px;
+   overflow-x: auto;
+   overflow-y: hidden;
+}
+
+.account {
+   height: 100%;
+   width: 80px;
+   display: grid;
+   grid-template-rows: 70% 30%;
+   margin-right: 8px; 
+   cursor: pointer;
+}
+
+.image-wrapper {
+   grid-row: 1;
+   width: 50px;
+   justify-self: center;
+   align-self: center;
+}
+
+.platform {
+   grid-row: 2;
+   text-align: center;
+   font-weight: bold;
+}

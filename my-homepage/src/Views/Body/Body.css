@@ -1,0 +1,32 @@
+.overview {
+   width: calc(100% - 32px);
+   height: fit-content;
+   margin-left: 16px;
+}
+ 
+.overview-grid {
+   margin-top: 32px;
+   margin-bottom: 32px;
+   display: grid;
+   grid-template-columns: 65% calc(35% - 32px);
+   grid-template-rows: 100vh;
+   grid-gap: 32px;
+}
+ 
+.overview-cell {
+   display: flex;
+   color: var(--text_color);
+   padding: 16px;
+}
+ 
+.left {
+   background-color: var(--background_color);
+   transition: background-color 0.6s;
+}
+
+.right {
+   height: fit-content;
+   background-color: var(--background_color_secondary);
+   transition: background-color 0.6s;
+   border-radius: 16px;
+}

@@ -1,0 +1,64 @@
+.dark-mode-toggle {
+  margin-right: 32px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  width: 80px;
+  height: 40px;
+  border-radius: 100px;
+  border: 2px solid var(--text_color);
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.6s;
+  position: relative;
+}
+
+ .dark-mode-toggle.dark-mode {
+   background-color: var(--background_color);
+ }
+ 
+ .dark-mode-toggle::before {
+   content: '';
+   position: absolute;
+   left: 4px;
+   width: 28px;
+   height: 28px;
+   border-radius: 50%;
+   transition: transform 0.6s;
+   background-color: var(--text_color);
+ }
+ 
+ .dark-mode-toggle.dark-mode::before {
+   transform: translateX(40px);
+ }
+
+ .dark-mode-toggle svg {
+  fill: var(--text_color);
+  width: 20px;
+  height: 20px;
+ }
+ 
+ .dark-mode-toggle.light-mode svg {
+   margin-left: 43px;
+ }
+
+ .dark-mode-toggle.dark-mode svg {
+   margin-left: 3px;
+ }
+ 
+ .dark-mode-toggle.light-mode .light-mode-icon {
+   display: flex;
+ }
+ 
+ .dark-mode-toggle.light-mode .dark-mode-icon {
+   display: none;
+ }
+ 
+ .dark-mode-toggle.dark-mode .light-mode-icon {
+   display: none;
+ }
+ 
+ .dark-mode-toggle.dark-mode .dark-mode-icon {
+   display: flex;
+ }
+ 
