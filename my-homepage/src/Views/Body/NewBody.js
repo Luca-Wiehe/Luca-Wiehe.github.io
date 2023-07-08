@@ -10,7 +10,7 @@ const all_jobs = [
       "end": "09/2023",
       "organization": "Mercedes-Benz AG",
       "title": "Data Scientist",
-      "type": "Full Time",
+      "type": "Internship",
       "description": <>During my internship, I was responsible for researching and implementing different statistical approaches in production planning. Those approaches include <span className='highlight'>Simulated Annealing</span> as well as <span className='highlight'>Reinforcement Learning</span> with both classical and <span className='highlight'>Graph Neural Networks</span>.</>
    },
    {
@@ -29,7 +29,16 @@ const all_jobs = [
       "organization": "Technical University of Munich",
       "title": "Researcher",
       "type": "Project Student",
-      "description": <>As a Teaching Assistant for the course <span className='highlight'>Introduction to Software Engineering</span>, I was giving tutorials to several groups of ~25 students. Tutorials include brief summaries of lectures, working through exercises, answering questions regarding lecture contents, as well as correcting final exams.</>
+      "description": <>As a Project Student in the Chair for Economics of Innovation, I was working on a Recommender System for Academic Publications based on <span className='highlight'>Natural Language Processing</span>. This entailed creating <span className='highlight'>Word Embeddings</span> and classifying subjects of publications using methods from <span className="highlight">Supervised Learning</span>.</>
+   },
+   {
+      "src": "tng_logo.svg",
+      "start": "03/2021",
+      "end": "08/2021",
+      "organization": "TNG Technology Consulting GmbH",
+      "title": "Software Developer",
+      "type": "Internship",
+      "description": <>During my internship, I developed a Jira plugin using <span className='highlight'>TypeScript</span> and <span className='highlight'>React.js</span>. The plugin analyzed requests of customers and gave answer suggestions based on past responses.</>
    }
 ]
 
