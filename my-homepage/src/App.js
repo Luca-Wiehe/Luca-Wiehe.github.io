@@ -1,13 +1,13 @@
 import './App.css';
-import Header from './Views/Header/Header';
-import Body from './Views/Body/Body';
+import Navbar from './Views/Header/Navbar';
+import NewBody from './Views/Body/NewBody';
 
 function App() {
   return (
     <div>
       <div className="app">
-        <div className="app-header"><Header /></div>
-        <div className="app-body"><Body /></div>
+        <div><Navbar /></div>
+        <div><NewBody /></div>
       </div>
     </div>
   );

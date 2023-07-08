@@ -15,10 +15,10 @@ function DarkModeToggle() {
     background_color: ['#f9f9f9', '#0e131a'],
     background_color_secondary: ['#edeef3', '#191f28'],
     background_color_tertiary: ['#ffffff', '#0f0f0f'],
-    accent_color1: ['#7347ee', '#4077c9'],
-    accent_color2: ['#ff8e65', '#4fd3b1'],
-    accent_color3: ['#00cce7', '#216757'],
-    accent_color4: ['#fac23d', '#a4564d'],
+    accent_color1: ['#7347ee', '#7140C9'],
+    accent_color2: ['#ff8e65', '#7EE687'],
+    accent_color3: ['#00cce7', '#FFA28B'],
+    accent_color4: ['#fac23d', '#929AFF'],
   };
 
   const updateColors = () => {
