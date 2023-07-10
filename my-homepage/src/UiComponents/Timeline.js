@@ -11,7 +11,7 @@ const Timeline = ({ title, entries }) => {
             <ul>
                {
                   entries.map((entry_dict, entry_idx) => (
-                     <li>
+                     <li key={entry_idx}>
                         {entry_idx === 0 && <div className="timeline-start" />}
                         <div className="occupation-icon-container">
                            <img 

@@ -1,11 +1,27 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Projects.css';
 import projects from '../../Constants/projects.json';
 
 const Projects = () => {
    const projectList = Object.entries(projects);
 
-   console.log(projectList);
+   const handleMouseMove = (e) => {
+      const { currentTarget : target} = e;
+
+      const rect = target.getBoundingClientRect(), 
+            x = e.clientX - rect.left,
+            y = e.clientY - rect.top;
+
+      target.style.setProperty('--mouse-x', `${x}px`);
+      target.style.setProperty('--mouse-y', `${y}px`);
+   }
+
+   // initialize listeners when loading for the first time
+   useEffect(() => {
+      for(const projectItem of document.querySelectorAll(".enabled")){
+         projectItem.onmousemove = e => handleMouseMove(e);
+      }
+   }, []);
 
    return (
       <>
@@ -18,7 +34,11 @@ const Projects = () => {
                   projectList.map((project, idx) => (
                      <li 
                         key={`preview-item-${idx}`} className={`${project[1].repositoryLink === "" ? "disabled" : "enabled"}`}
-                        onClick={() => window.open(project[1].repositoryLink)}
+                        onClick={() => {
+                           if (project[1].repositoryLink !== ""){
+                              window.open(project[1].repositoryLink);
+                           }
+                        }}
                      >
                         <h2>{project[0]}</h2>
                         <p>{project[1].description}</p>

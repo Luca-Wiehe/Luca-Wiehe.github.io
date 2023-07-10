@@ -40,6 +40,10 @@ function DarkModeToggle() {
   };
 
   useEffect(() => {
+    setDarkMode(window.matchMedia('(prefers-color-scheme: dark)').matches);
+  }, []);
+
+  useEffect(() => {
     updateColors();
   }, [darkMode]);
 
