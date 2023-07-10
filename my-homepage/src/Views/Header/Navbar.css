@@ -103,6 +103,11 @@
   opacity: 1;
 }
 
+.link {
+  color: var(--text_color);
+  text-decoration: none;
+}
+
 @media (max-width: 720px) {
   .profile-image-container {
     place-self: center;

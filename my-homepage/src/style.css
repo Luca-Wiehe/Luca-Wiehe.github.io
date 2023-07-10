@@ -4,29 +4,45 @@
 
    /* Global element colors */
    --background_light: #f9f9f9;
-   --background_light_secondary: #edeef3;
+   --background_light_secondary: #f3f3f4;
    --background_light_tertiary: #ffffff;
 
    --accent_color1_light: #7347ee;
+   --accent_color1_light_fade: #7347ee50;
+
    --accent_color2_light: #ff8e65;
+   --accent_color2_light_fade: #ff8e6550;
+
    --accent_color3_light: #00cce7;
+   --accent_color3_light_fade: #00cce750;
+
    --accent_color4_light: #fac23d;
+   --accent_color4_light_fade: #fac23d50;
+
+   --accent_color1_dark: #7140C9;
+   --accent_color1_dark_fade: #7140C950;
+
+   --accent_color2_dark: #7EE687;
+   --accent_color2_dark_fade: #7EE68750;
+
+   --accent_color3_dark: #FFA28B;
+   --accent_color3_dark_fade: #FFA28B50;
+
+   --accent_color4_dark: #929AFF;
+   --accent_color4_dark_fade: #929AFF50;
 
    --background_dark: #0D1116;
    --background_dark_secondary: #161B22;
    --background_dark_tertiary: #0f0f0f;
 
-   --accent_color1_dark: #7140C9;
-   --accent_color2_dark: #7EE687;
-   --accent_color3_dark: #FFA28B;
-   --accent_color4_dark: #929AFF;
-
    /* Global text colors */
    --text_light: #000000;
-   --text_light_secondary: #5a5a5a;
+   --text_light_secondary: #c5c5c5;
+   --text_light_tertiary: #dfdfdf;
 
    --text_dark: #ffffff;
    --text_dark_secondary: #8a8a8a;
+   --text_dark_tertiary: #505050;
 
    /* Currently active color scheme */
    --background_color: var(--background_light);
@@ -34,8 +50,17 @@
    --background_color_tertiary: var(--background_light_tertiary);
    --text_color: var(--text_light);   
    --text_color_secondary: var(--text_light_secondary);   
+   --text_color_tertiary: var(--text_light_tertiary);   
+
    --accent_color1: var(--accent_color1_light);
+   --accent_color1_fade: var(--accent_color1_light_fade);
+
    --accent_color2: var(--accent_color2_light);
+   --accent_color2_fade: var(--accent_color2_light_fade);
+
    --accent_color3: var(--accent_color3_light);
+   --accent_color3_fade: var(--accent_color3_light_fade);
+
    --accent_color4: var(--accent_color4_light);
+   --accent_color4_fade: var(--accent_color4_light_fade);
 }

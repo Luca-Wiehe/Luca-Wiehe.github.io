@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './Navbar.css';
+import { Link } from 'react-router-dom';
 import CircularImage from '../../UiComponents/CircularImage';
 import DarkModeToggle from '../../UiComponents/DarkModeToggle';
 
@@ -43,10 +44,26 @@ const Navbar = () => {
       </div>
       <ul className={`menu-items${isNavbarExpanded ? "" : " active"}`}>
          <li className="main-item">LUCA<span>WIEHE</span></li>
-         <li>Education</li>
-         <li>Work</li>
-         <li>Projects</li>
-         <li>Awards</li>
+         <li>
+            <Link className="link" to="/education/">
+               Education
+            </Link>
+         </li>
+         <li>
+            <Link className="link" to="/work/">
+               Work
+            </Link>
+         </li>
+         <li>
+            <Link className="link" to="/projects/">
+               Projects
+            </Link>
+         </li>
+         <li>
+            <Link className="link" to="/awards/">
+               Awards
+            </Link>
+         </li>
       </ul>
       <div className={`dark-toggle${isNavbarExpanded ? "" : " active"}`}>
          <DarkModeToggle  />
