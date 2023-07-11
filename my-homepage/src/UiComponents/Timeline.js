@@ -1,7 +1,10 @@
 import './Timeline.css';
 import '../style.css';
 
+import React from 'react';
+
 const Timeline = ({ title, entries }) => {
+
    return (
       <>
          <div className="header-wrapper">

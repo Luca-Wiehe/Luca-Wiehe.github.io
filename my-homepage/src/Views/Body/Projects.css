@@ -108,6 +108,10 @@
       padding-bottom: calc(2 * 40px);
    }
 
+   .projects-header h1 {
+      font-size: 4rem;
+   }
+
    .projects-container ul li {
       padding: 20px;
    }

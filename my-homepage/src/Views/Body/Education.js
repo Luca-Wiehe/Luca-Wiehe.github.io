@@ -35,7 +35,7 @@ const all_education = [
       "organization": "Sophie-Barat-Schule",
       "title": "Physics Profile",
       "type": "Abitur",
-      "description": <>I completed my Abitur (High School Diploma) with an <span className='highlight'>grade average of 1.0</span>. During my school time, I participated in several <span className='highlight'>extracurricular activities</span> such as the school's rowing team, the Jazz Orchestra, and the school choir.</>
+      "description": <>I completed my Abitur (High School Diploma) with a <span className='highlight'>grade average of 1.0</span>. During my school time, I participated in several <span className='highlight'>extracurricular activities</span> such as the school's rowing team, the Jazz Orchestra, and the school choir.</>
    }
 ]
 

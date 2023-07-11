@@ -165,6 +165,12 @@
    transition: all 0.5s ease-in-out;
 }
 
+@media (prefers-reduced-motion) {
+   .timeline-entry {
+      transition: none;
+   }
+}
+
 @media (max-width: 768px) {
    .header-wrapper {
       padding-left: 40px;
