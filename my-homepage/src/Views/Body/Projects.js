@@ -40,8 +40,6 @@ const Projects = () => {
                            }
                         }}
                      >
-                        <h2>{project[0]}</h2>
-                        <p>{project[1].description}</p>
                         <div 
                            className={`project-preview`}
                            style={{
@@ -49,11 +47,13 @@ const Projects = () => {
                               aspectRatio: "16/9"
                            }} 
                         />
+                        <h2>{project[0]}</h2>
+                        <p>{project[1].description}</p>
                         <button 
                            disabled={project[1].repositoryLink === ""}
                            onClick={() => window.open(project[1].repositoryLink)}
                         >
-                           {project[1].repositoryLink === "" ? <>Repository unavailable for legal reasons</> : <>View Repository &gt;</>}
+                           {project[1].repositoryLink === "" ? <>Repository Unavailable</> : <>View Repository &gt;</>}
                         </button>
                      </li>
                ))}
