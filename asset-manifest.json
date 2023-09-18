@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ded9d9f1.css",
+    "main.js": "/static/js/main.6991b220.js",
+    "static/media/Mona-Sans.woff2": "/static/media/Mona-Sans.955a87eb3766a32ac970.woff2",
+    "index.html": "/index.html",
+    "main.ded9d9f1.css.map": "/static/css/main.ded9d9f1.css.map",
+    "main.6991b220.js.map": "/static/js/main.6991b220.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ded9d9f1.css",
+    "static/js/main.6991b220.js"
+  ]
+}
