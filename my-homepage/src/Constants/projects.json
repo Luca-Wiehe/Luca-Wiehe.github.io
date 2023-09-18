@@ -1,10 +1,17 @@
 {
+   "Semantus": {
+      "repositoryLink": "https://github.com/Luca-Wiehe/semantus_web",
+      "src": "semantus.svg",
+      "year": "2022",
+      "description": "An NLP-based game where players have to guess a word based on semantic similarities",
+      "languages": "Python,JavaScript",
+      "backgroundStyle": "linear-gradient(to right, #7347ee, #8d6de4)"
+   }, 
    "Recommending Papers": {
       "repositoryLink": "https://github.com/Luca-Wiehe/RecommendingPapers",
-      "src": "paper-recommendations-2.png",
+      "src": "recommending-papers.svg",
       "year": "2022",
-      "goal": "This project aims at making good paper recommendations, including papers from other fields of study.",
-      "description": "To make good paper recommendations, we had to create a dataset of academic publications using webscraping and existing datasets. Having merged this data, we then used Natural Language Processing to create word-embeddings for each publication. Using these embeddings, we applied Machine Learning techniques to classify subjects of papers. This was required to meaningfully compare papers across subjects and allow recommendations across subjects.",
+      "description": "An NLP-based approach to recommend papers from other fields of study",
       "languages": "Python,JavaScript",
       "backgroundStyle": "linear-gradient(to right, #7347ee, #8d6de4)"
    }, 
@@ -12,8 +19,7 @@
       "repositoryLink": "",
       "src": "leto-1.png",
       "year": "2022",
-      "goal": "LETO is a learning platform that enables collaborative learning.",
-      "description": "During the Covid-19 pandemic, we developed this project in a team of five, including three programmers. The platform uses the Django API to connect the Python Matching Server with a user-friendly web application. Users are matched based on learning behaviors and personality traits. The associated research project had the goal to investigate if these criteria create a more effective collaborative learning environment than random matchings.",
+      "description": "A full-stack web application for TUM students to find study groups in times of Covid",
       "languages": "Python,JavaScript",
       "backgroundStyle": "linear-gradient(to right, #f01259, #ed6d96)"
    }
