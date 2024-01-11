@@ -2,6 +2,24 @@
 This page serves as an overview for anyone who is interested in past programming projects I created or contributed to.
 
 ## Preview
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 20px; justify-content: center; text-align: center;">
+  <div>
+    <img width="1400" alt="image" src="https://github.com/Luca-Wiehe/Luca-Wiehe.github.io/assets/85710000/0e193b62-c915-4ded-bb8e-0fd841b665d8">
+    <br>
+    <em>Screenshot 1: Landing Page</em>
+  </div>
+  <br>
+  <div>
+    <img width="1400" alt="image" src="https://github.com/Luca-Wiehe/Luca-Wiehe.github.io/assets/85710000/b9e82a2b-7203-4881-868d-3147b3dd2ed3">
+    <br>
+    <em>Screenshot 2: Timeline</em>
+  </div>
+  <div>
+    <img width="1400" alt="image" src="https://github.com/Luca-Wiehe/Luca-Wiehe.github.io/assets/85710000/0bf1ca32-4f00-4cee-adab-3553227e6c12">
+    <br>
+    <em>Screenshot 3: Project Overview</em>
+  </div>
+</div>
 
 ## Projection Description
 
