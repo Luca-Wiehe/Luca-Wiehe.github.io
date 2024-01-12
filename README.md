@@ -1,5 +1,5 @@
 # My Homepage
-This page serves as an overview for anyone who is interested in past programming projects I created or contributed to.
+This is my personal portfolio website. The project was developed using the React.js framework which combines HTML, CSS, and JavaScript with dynamic state management. 
 
 ## Preview
 <div style="display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 20px; justify-content: center; text-align: center;">
