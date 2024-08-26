@@ -3,6 +3,15 @@ import Timeline from "../../UiComponents/Timeline";
 const all_education = [
    {
       "src": "tum_logo.svg",
+      "start": "10/2023",
+      "end": "09/2025",
+      "organization": "Technical University of Munich",
+      "title": "Robotics, Cognition, Intelligence",
+      "type": "M.Sc.",
+      "description": <>Master's degree with a focus on AI in robotics. This entails traditional Machine Learning and Deep Learning approaches and their applications to Computer Vision and Control Theory.</>
+   },
+   {
+      "src": "tum_logo.svg",
       "start": "10/2019",
       "end": "03/2023",
       "organization": "Technical University of Munich",
