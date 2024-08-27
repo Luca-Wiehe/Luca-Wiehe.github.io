@@ -1,7 +1,7 @@
 {
    "Sharp Music": {
       "repositoryLink": "",
-      "src": "semantus.svg",
+      "src": "proj_sharp.png",
       "year": "2024",
       "description": "An iOS app that uses spaced repetition to help users learn instruments faster",
       "languages": "Swift",
@@ -9,7 +9,7 @@
    },
    "RAG Summarization": {
       "repositoryLink": "https://github.com/Luca-Wiehe/rag_summarization",
-      "src": "rag-summarization.jpg",
+      "src": "proj_rag.png",
       "year": "2024",
       "description": "Reducing hallucinations of LLM in summarizations by augmenting context using RAG",
       "languages": "Python",
@@ -17,7 +17,7 @@
    },
    "GovMatch": {
       "repositoryLink": "https://github.com/Luca-Wiehe/govtech_hackathon_24",
-      "src": "govmatch.jpg",
+      "src": "proj_govmatch.png",
       "year": "2024",
       "description": "GovTech Hackathon 2024. Help finding the right people within the Swiss government",
       "languages": "Swift",
@@ -25,7 +25,7 @@
    },
    "Semantus": {
       "repositoryLink": "https://github.com/Luca-Wiehe/semantus_web",
-      "src": "semantus.svg",
+      "src": "proj_semantus.png",
       "year": "2022",
       "description": "An NLP-based game where players have to guess a word based on semantic similarities",
       "languages": "Python,JavaScript",
@@ -33,7 +33,7 @@
    }, 
    "Recommending Papers": {
       "repositoryLink": "https://github.com/Luca-Wiehe/RecommendingPapers",
-      "src": "recommending-papers.svg",
+      "src": "proj_recommender.png",
       "year": "2022",
       "description": "An NLP-based approach to recommend papers from other fields of study",
       "languages": "Python,JavaScript",
@@ -41,7 +41,7 @@
    }, 
    "LETO": {
       "repositoryLink": "",
-      "src": "leto-1.png",
+      "src": "proj_leto.png",
       "year": "2022",
       "description": "A full-stack web application for TUM students to find study groups in times of Covid",
       "languages": "Python,JavaScript",
