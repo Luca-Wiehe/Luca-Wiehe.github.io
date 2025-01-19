@@ -229,3 +229,59 @@
       left: -7px;
    }
 }
+/* 
+   OCCUPATION-DESCRIPTION-CONTAINER
+   - Two-thirds width on desktop, 100% width on mobile
+   - Uniform shadow
+   - Smaller font size inside
+*/
+.occupation-description-container {
+   /* Default: full width (for mobile and up) */
+   width: 100%;
+ 
+   /* Vertical spacing */
+   margin-top: 24px;
+ 
+   /* Background & rounded corners */
+   background-color: var(--background_color_secondary);
+   border-radius: 12px;
+ 
+   /* Uniform shadow on all sides */
+   box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+ 
+   /* Spacing around the text */
+   padding: 16px 24px;
+   box-sizing: border-box;
+ 
+   transition: all 0.3s ease-in-out;
+ }
+ 
+ /* On desktop (or tablet above 768px), occupy 2/3 of available width */
+ @media (min-width: 768px) {
+   .occupation-description-container {
+     width: 66.6667%;
+   }
+ }
+ 
+ /* 
+    OCCUPATION-DESCRIPTION
+    - Small font size on both desktop and mobile
+    - Prevent text overflow
+ */
+ .occupation-description {
+   margin: 0;
+   font-size: 1.2rem; /* same smaller size everywhere */
+   color: var(--text_color_secondary);
+   
+   /* Let long words/URLs wrap */
+   word-wrap: break-word;     
+   overflow-wrap: break-word;
+ 
+   /* Override any leftover width constraints from earlier rules */
+   width: auto !important; 
+   max-width: 100% !important;
+   position: static;
+   left: auto;
+   top: auto;
+ }
+ 

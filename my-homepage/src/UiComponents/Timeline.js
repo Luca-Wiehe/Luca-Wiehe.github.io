@@ -12,31 +12,35 @@ const Timeline = ({ title, entries }) => {
          </div>
          <div className="timeline-container">
             <ul>
-               {
-                  entries.map((entry_dict, entry_idx) => (
-                     <li key={entry_idx}>
-                        {entry_idx === 0 && <div className="timeline-start" />}
-                        <div className="occupation-icon-container">
-                           <img 
-                              src={`${process.env.PUBLIC_URL}/images/${entry_dict.src}`} 
-                              alt={entry_dict.organization} 
-                           />
-                        </div>
-                        <div className="occupation-organization">
-                           <div className="date">
-                              {entry_dict.start} - {entry_dict.end}
-                           </div>
-                           <h2>
-                              {entry_dict.organization}<br />
-                              <span className="occupation-name">{entry_dict.title} </span>
-                              <span className="occupation-type">({entry_dict.type})</span>
-                           </h2>
-                           <p className="occupation-description">{entry_dict.description}</p>
-                        </div>
-                        {entry_idx === entries.length - 1 && <div className="timeline-end" />}
-                     </li>
-                  ))
-               }
+            {
+               entries.map((entry, idx) => (
+                  <li key={idx}>
+                     {idx === 0 && <div className="timeline-start" />}
+                     <div className="occupation-icon-container">
+                     <img
+                        src={`${process.env.PUBLIC_URL}/images/${entry.src}`}
+                        alt={entry.organization}
+                     />
+                     </div>
+                     <div className="occupation-organization">
+                     <div className="date">
+                        {entry.start} - {entry.end}
+                     </div>
+                     <h2>
+                        {entry.organization}
+                        <br />
+                        <span className="occupation-name">{entry.title} </span>
+                        <span className="occupation-type">({entry.type})</span>
+                     </h2>
+
+                     <div className="occupation-description-container">
+                        <p className="occupation-description">{entry.description}</p>
+                     </div>
+                     </div>
+                     {idx === entries.length - 1 && <div className="timeline-end" />}
+                  </li>
+               ))
+            }
             </ul>
          </div>
       </>

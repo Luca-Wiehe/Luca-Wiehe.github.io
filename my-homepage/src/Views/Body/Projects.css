@@ -3,12 +3,14 @@
    justify-content: center;
    background-color: var(--background_color);
    padding-top: 60vh;
+   /* Reduced bottom padding so it isn’t too large on wide screens.
+      You can tweak if needed */
    padding-bottom: calc(3 * 80px);
-
+ 
    transition: all 0.5s ease-in-out;
-}
-
-.projects-header h1 {
+ }
+ 
+ .projects-header h1 {
    all: unset;
    display: block;
    font-feature-settings: unset;
@@ -17,51 +19,19 @@
    max-width: 67.5rem;
    letter-spacing: -0.1rem;
    color: var(--text_color);
-}
-
-.projects-container {
-   background-color: var(--background_color);
-   transition: all 0.5s ease-in-out;
-   padding-left: 64px;
-   padding-right: 64px;
-   padding-bottom: 120px;
-}
-
-.projects-container ul {
-   list-style: none;
-   padding: 0;
-   margin: 0;
-   display: grid;
-   grid-template-columns: repeat(4, 1fr);
-   gap: 32px;
-}
-
-.projects-container ul li {
-   min-height: 350px;
-   background-color: var(--background_color_secondary);
-   color: var(--text_color);
-
-   padding: 24px;
-   
-   border-radius: 16px;
-   border: 1px solid var(--text_color_tertiary);
-
-   transition: all 0.5s ease-in-out;
+ }
+ 
+ .enabled {
    position: relative;
-}
-
-.enabled {
-   position: relative;
-}
-
-
-.enabled:hover {
+ }
+ 
+ .enabled:hover {
    transform: scale(1.01);
    cursor: pointer;
-}
-
-/* highlight effect when hovering */
-.enabled::before {
+ }
+ 
+ /* highlight effect when hovering */
+ .enabled::before {
    border-radius: inherit;
    content: "";
    height: 100%;
@@ -71,91 +41,108 @@
    width: 100%;
    z-index: 2;
    background: radial-gradient(
-      800px circle at var(--mouse-x) var(--mouse-y),
-      rgba(255, 255, 255, 0.06),
-      transparent 40%
+     800px circle at var(--mouse-x) var(--mouse-y),
+     rgba(255, 255, 255, 0.06),
+     transparent 40%
    );
    opacity: 0;
    transition: opacity 0.5s;
-}
-
-.enabled:hover::before {
+ }
+ 
+ .enabled:hover::before {
    opacity: 1;
-}
-
-.disabled {
+ }
+ 
+ .disabled {
    opacity: 0.5;
    cursor: not-allowed;
-}
-
-.projects-container ul {
+ }
+ 
+ /* 
+    Reduce horizontal padding so that the actual grid gap (set to 16px below)
+    is obvious and not overshadowed by large side-padding.
+ */
+ .projects-container {
+   background-color: var(--background_color);
+   transition: all 0.5s ease-in-out;
+   padding: 16px; /* Use 16px on all sides for a clean, consistent look */
+   padding-bottom: 120px;
+ }
+ 
+ /* The actual gap between project tiles is 16px,
+    so keep it consistent and remove leftover big padding. */
+ .projects-container ul {
    list-style: none;
    padding: 0;
-   margin: 0;
+   margin: 0 auto; /* Center the grid within the container */
+   
    display: grid;
+   /* 
+      Let cards expand beyond 280px on larger screens, but keep min at 280px.
+      This ensures the gap is always 16, rather than large empty space or big side margins.
+   */
    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-   gap: 32px;
-   justify-content: center; /* Centers the grid within the container */
-}
-
-.projects-container ul li {
-   width: 100%;
-   max-width: 280px; /* Fixed width */
-   min-width: 280px;
+   gap: 16px;
+ }
+ 
+ .projects-container ul li {
    background-color: var(--background_color_secondary);
    color: var(--text_color);
-
+ 
    padding: 24px;
    border-radius: 16px;
    border: 1px solid var(--text_color_tertiary);
-
+ 
    transition: all 0.5s ease-in-out;
    position: relative;
-}
-
-.projects-container ul li button {
-   position: absolute;
+ 
+   /* Remove the fixed max-width so tiles can expand on large screens */
+   /* max-width: 280px;  <-- Removed */
+ 
+   box-sizing: border-box; /* Ensure padding and borders are included in calculations */
+ }
+ 
+ /* Remove absolute positioning from the button. It will now
+    appear below the description, avoiding overlap. */
+ .projects-container ul li button {
    font-size: 1rem;
-   height: 30px;
    font-weight: 700;
    border: unset;
    background-color: unset;
    color: var(--text_color);
    cursor: pointer;
-   bottom: 24px;
-   left: 19px;
+   margin-top: 16px; /* Add spacing above the button so it's clearly separated */
    text-align: left;
-}
-
-.project-preview {
-   width: 100%; /* Make sure the preview also scales accordingly */
+ }
+ 
+ .project-preview {
+   width: 100%; /* Ensure the preview scales correctly */
    height: auto;
    aspect-ratio: 16/9;
-}
-
-/* Adjustments for smaller screens */
-@media (max-width: 768px) {
+ }
+ 
+ /* Adjustments for smaller screens */
+ @media (max-width: 768px) {
    .projects-header {
-      padding-top: 34vh;
-      padding-bottom: calc(2 * 40px);
+     padding-top: 34vh;
+     padding-bottom: calc(2 * 40px);
    }
-
+ 
    .projects-header h1 {
-      font-size: 4rem;
+     font-size: 4rem;
    }
-
+ 
    .projects-container ul li {
-      padding: 20px;
+     padding: 20px;
    }
-
+ 
    .projects-container {
-      padding-left: 16px;
-      padding-right: 16px;
+     padding: 16px; /* Keep it small for mobile too */
    }
-
+ 
    .projects-container ul {
-      gap: 16px;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+     gap: 16px;
+     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
    }
-}
-
+ }
+ 
