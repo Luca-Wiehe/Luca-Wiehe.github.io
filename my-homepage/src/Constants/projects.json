@@ -1,8 +1,40 @@
 {
+    "Safe Robot Control": {
+       "repositoryLink": "",
+       "src": "proj_rpchi.png",
+       "year": "2025",
+       "description": "Programming a KUKA iiwa robot using safe control paradigms",
+       "languages": "Java",
+       "backgroundStyle": "linear-gradient(to right, #7347ee, #8d6de4)"
+    },
+    "Diffusion Policies": {
+       "repositoryLink": "https://github.com/Luca-Wiehe/tum-adlr-04.git",
+       "src": "proj_diffusion-policy.png",
+       "year": "2025",
+       "description": "Enhancing diffusion-based imitation learning with Residual Reinforcement Learning",
+       "languages": "Python",
+       "backgroundStyle": "linear-gradient(to right, #7347ee, #8d6de4)"
+    },
+    "Facial Image Generation": {
+       "repositoryLink": "",
+       "src": "proj_mlmi.png",
+       "year": "2025",
+       "description": "Conditioning facial image generation to incorporate medical conditions",
+       "languages": "Python",
+       "backgroundStyle": "linear-gradient(to right, #7347ee, #8d6de4)"
+    },
+    "DCSEG": {
+       "repositoryLink": "https://github.com/lusxvr/dcseg.git",
+       "src": "proj_dcseg.png",
+       "year": "2025",
+       "description": "Decoupled 3D semantic segmentation in Gaussian Splatting reconstructions",
+       "languages": "Python",
+       "backgroundStyle": "linear-gradient(to right, #7347ee, #8d6de4)"
+    },
    "Arpeggiate": {
       "repositoryLink": "",
-      "src": "proj_sharp.png",
-      "year": "2024",
+      "src": "proj_arpeggiate.png",
+      "year": "2025",
       "description": "An iOS app that uses spaced repetition to help users learn instruments faster",
       "languages": "Swift",
       "backgroundStyle": "linear-gradient(to right, #7347ee, #8d6de4)"
@@ -11,7 +43,7 @@
       "repositoryLink": "https://github.com/Luca-Wiehe/rag_summarization",
       "src": "proj_rag.png",
       "year": "2024",
-      "description": "Reducing hallucinations of LLM in summarizations by augmenting context using RAG",
+      "description": "Reducing hallucinations of LLMs in summarizations by augmenting context using RAG",
       "languages": "Python",
       "backgroundStyle": "linear-gradient(to right, #7347ee, #8d6de4)"
    },
