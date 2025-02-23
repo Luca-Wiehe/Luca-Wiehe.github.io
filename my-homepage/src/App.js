@@ -5,7 +5,8 @@ import Work from './Views/Body/Work';
 import Education from './Views/Body/Education';
 import Projects from './Views/Body/Projects';
 import Awards from './Views/Body/Awards';
-import {BrowserRouter as Router, Routes, Route, useLocation} from 'react-router-dom';
+import AboutMe from './Views/Body/AboutMe';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -25,11 +26,11 @@ function App() {
           <div>
             <ScrollToTop />
             <Routes>
-              <Route path="/" exact element={<Education />}/>
-              <Route path="/education" exact element={<Education />}/>
-              <Route path="/work" exact element={<Work />}/>
-              <Route path="/projects" exact element={<Projects />}/>
-              <Route path="/awards" exact element={<Awards />}/>
+              <Route path="/" exact element={<AboutMe />} />
+              <Route path="/education" exact element={<Education />} />
+              <Route path="/work" exact element={<Work />} />
+              <Route path="/projects" exact element={<Projects />} />
+              <Route path="/awards" exact element={<Awards />} />
             </Routes>
           </div>
         </div>
