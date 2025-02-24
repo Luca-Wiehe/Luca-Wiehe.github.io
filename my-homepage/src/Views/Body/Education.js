@@ -1,23 +1,21 @@
-import Timeline from "../../UiComponents/Timeline";
-import educationData from "../../Constants/education.json";
+import React from 'react';
+import AnimatedTimeline from '../../UiComponents/AnimatedTimeline';
+import educationData from '../../Constants/education.json';
+import './Education.css';
 
 const Education = () => {
-   const educationWithJSX = educationData.education.map(entry => ({
-      ...entry,
-      description: entry.description.includes('<span') ? (
-         <>
-            {entry.description.split(/<span.*?>|<\/span>/).map((text, i) =>
-               i % 2 === 0 ? text : <span key={i} className="highlight">{text}</span>
-            )}
-         </>
-      ) : entry.description
-   }));
-
-   return (
-      <>
-         <Timeline title="Education" entries={educationWithJSX} />
-      </>
-   );
+  return (
+    <div className="education-page">
+      <div className="page-header">
+        <h1 className="page-title">Academic Formation</h1>
+        <p className="page-subtitle">
+          Intellectual development through diverse scholarly environments
+        </p>
+      </div>
+      
+      <AnimatedTimeline data={educationData.education} type="education" />
+    </div>
+  );
 };
 
 export default Education;

@@ -1,7 +1,18 @@
 {
     "education": [
         {
-            "src": "tum_logo.svg",
+            "logo": "tum_logo.svg",
+            "img": "3d-icons/oxford.png",
+            "start": "10/2023",
+            "end": "10/2025",
+            "organization": "University of Oxford",
+            "title": "Master's Thesis",
+            "type": "Visiting Researcher",
+            "description": "I wrote my Master's Thesis on conditioning <span>Vision-Language-Action</span> in the Visual Geometry Group, supervised by João Henriques."
+        },
+        {
+            "logo": "tum_logo.svg",
+            "img": "3d-icons/tum.png",
             "start": "10/2023",
             "end": "10/2025",
             "organization": "Technical University of Munich",
@@ -10,16 +21,8 @@
             "description": "Master's degree with a focus on AI in robotics. This entails traditional Machine Learning and Deep Learning approaches and their applications to <span>Computer Vision</span> and <span>Control Theory</span>."
         },
         {
-            "src": "tum_logo.svg",
-            "start": "10/2019",
-            "end": "03/2023",
-            "organization": "Technical University of Munich",
-            "title": "Management & Technology",
-            "type": "B.Sc.",
-            "description": "Throughout my bachelor's degree, I have completed <span>239/180 ECTS</span> with a final grade of <span>1.5</span>. These credits comprise 102 ECTS in Computer Science, 33.5 ECTS in Mathematics, 91.5 ECTS in Business and Economics, and 12 ECTS in other subjects. In my thesis, I used an NLP-based approach to analyze the interdisciplinarity of European researchers."
-        },
-        {
-            "src": "harvard_logo.svg",
+            "logo": "harvard_logo.svg",
+            "img": "3d-icons/harvard.png",
             "start": "08/2022",
             "end": "12/2022",
             "organization": "Harvard University",
@@ -28,7 +31,8 @@
             "description": "I spent a semester abroad at Harvard University as a Visiting Undergraduate Student. During my time at Harvard, I have taken courses such as <span>Unsupervised Learning</span> and <span>Algorithms and their Limitations</span>. Additionally, I was part of the <span>Harvard Table Tennis Team</span>."
         },
         {
-            "src": "lund_logo.svg",
+            "logo": "lund_logo.svg",
+            "img": "3d-icons/lund.png",
             "start": "08/2021",
             "end": "01/2022",
             "organization": "Lund University",
@@ -37,7 +41,18 @@
             "description": "I spent a semester abroad at Lund University through the Erasmus+ program. Throughout the semester, I have taken courses such as <span>Constraint Programming</span> and <span>Language Technology</span>."
         },
         {
-            "src": "sbs_logo.svg",
+            "logo": "tum_logo.svg",
+            "img": "3d-icons/tum.png",
+            "start": "10/2019",
+            "end": "03/2023",
+            "organization": "Technical University of Munich",
+            "title": "Management & Technology",
+            "type": "B.Sc.",
+            "description": "Throughout my bachelor's degree, I have completed <span>239/180 ECTS</span> with a final grade of <span>1.5</span>. These credits comprise 102 ECTS in Computer Science, 33.5 ECTS in Mathematics, 91.5 ECTS in Business and Economics, and 12 ECTS in other subjects. In my thesis, I used an NLP-based approach to analyze the interdisciplinarity of European researchers."
+        },
+        {
+            "logo": "sbs_logo.svg",
+            "img": "3d-icons/sbs.png",
             "start": "06/2011",
             "end": "06/2019",
             "organization": "Sophie-Barat-Schule",

@@ -4,7 +4,8 @@ import Navbar from './Views/Header/Navbar';
 import Work from './Views/Body/Work';
 import Education from './Views/Body/Education';
 import Projects from './Views/Body/Projects';
-import Awards from './Views/Body/Awards';
+import Publications from './Views/Body/Publications';
+import Other from './Views/Body/Other';
 import AboutMe from './Views/Body/AboutMe';
 import Footer from './UiComponents/Footer';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
@@ -29,9 +30,10 @@ function App() {
             <Routes>
               <Route path="/" exact element={<AboutMe />} />
               <Route path="/education" exact element={<Education />} />
+              <Route path="/publications" exact element={<Publications />} />
               <Route path="/work" exact element={<Work />} />
               <Route path="/projects" exact element={<Projects />} />
-              <Route path="/awards" exact element={<Awards />} />
+              <Route path="/other" exact element={<Other />} />
             </Routes>
           </div>
           <Footer />

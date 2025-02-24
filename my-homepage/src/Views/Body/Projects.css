@@ -1,148 +1,221 @@
-.projects-header {
-   display: flex;
-   justify-content: center;
-   background-color: var(--background_color);
-   padding-top: 60vh;
-   /* Reduced bottom padding so it isn’t too large on wide screens.
-      You can tweak if needed */
-   padding-bottom: calc(3 * 80px);
- 
-   transition: all 0.5s ease-in-out;
- }
- 
- .projects-header h1 {
-   all: unset;
-   display: block;
-   font-feature-settings: unset;
-   font-size: 66px;
-   font-weight: 800;
-   max-width: 67.5rem;
-   letter-spacing: -0.1rem;
-   color: var(--text_color);
- }
- 
- .enabled {
-   position: relative;
- }
- 
- .enabled:hover {
-   transform: scale(1.01);
-   cursor: pointer;
- }
- 
- /* highlight effect when hovering */
- .enabled::before {
-   border-radius: inherit;
-   content: "";
-   height: 100%;
-   left: 0px;
-   position: absolute;
-   top: 0px;
-   width: 100%;
-   z-index: 2;
-   background: radial-gradient(
-     800px circle at var(--mouse-x) var(--mouse-y),
-     rgba(255, 255, 255, 0.06),
-     transparent 40%
-   );
-   opacity: 0;
-   transition: opacity 0.5s;
- }
- 
- .enabled:hover::before {
-   opacity: 1;
- }
- 
- .disabled {
-   opacity: 0.5;
-   cursor: not-allowed;
- }
- 
- /* 
-    Reduce horizontal padding so that the actual grid gap (set to 16px below)
-    is obvious and not overshadowed by large side-padding.
- */
- .projects-container {
-   background-color: var(--background_color);
-   transition: all 0.5s ease-in-out;
-   padding: 16px; /* Use 16px on all sides for a clean, consistent look */
-   padding-bottom: 120px;
- }
- 
- /* The actual gap between project tiles is 16px,
-    so keep it consistent and remove leftover big padding. */
- .projects-container ul {
-   list-style: none;
-   padding: 0;
-   margin: 0 auto; /* Center the grid within the container */
-   
-   display: grid;
-   /* 
-      Let cards expand beyond 280px on larger screens, but keep min at 280px.
-      This ensures the gap is always 16, rather than large empty space or big side margins.
-   */
-   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-   gap: 16px;
- }
- 
- .projects-container ul li {
-   background-color: var(--background_color_secondary);
-   color: var(--text_color);
- 
-   padding: 24px;
-   border-radius: 16px;
-   border: 1px solid var(--text_color_tertiary);
- 
-   transition: all 0.5s ease-in-out;
-   position: relative;
- 
-   /* Remove the fixed max-width so tiles can expand on large screens */
-   /* max-width: 280px;  <-- Removed */
- 
-   box-sizing: border-box; /* Ensure padding and borders are included in calculations */
- }
- 
- /* Remove absolute positioning from the button. It will now
-    appear below the description, avoiding overlap. */
- .projects-container ul li button {
-   font-size: 1rem;
-   font-weight: 700;
-   border: unset;
-   background-color: unset;
-   color: var(--text_color);
-   cursor: pointer;
-   margin-top: 16px; /* Add spacing above the button so it's clearly separated */
-   text-align: left;
- }
- 
- .project-preview {
-   width: 100%; /* Ensure the preview scales correctly */
-   height: auto;
-   aspect-ratio: 16/9;
- }
- 
- /* Adjustments for smaller screens */
- @media (max-width: 768px) {
-   .projects-header {
-     padding-top: 34vh;
-     padding-bottom: calc(2 * 40px);
-   }
- 
-   .projects-header h1 {
-     font-size: 4rem;
-   }
- 
-   .projects-container ul li {
-     padding: 20px;
-   }
- 
-   .projects-container {
-     padding: 16px; /* Keep it small for mobile too */
-   }
- 
-   .projects-container ul {
-     gap: 16px;
-     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-   }
- }
- 
+.projects-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding-top: 80px;
+}
+
+.projects-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 32px;
+  margin-bottom: 80px;
+}
+
+.project-card {
+  background: linear-gradient(145deg, #ffffff, #f8f9fa);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 
+    0 20px 60px rgba(0, 0, 0, 0.1),
+    0 8px 25px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+}
+
+.project-card:hover {
+  transform: translateY(-12px) rotateX(2deg);
+  box-shadow: 
+    0 30px 80px rgba(0, 0, 0, 0.15),
+    0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+.project-image-container {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.4s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.1);
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.8), rgba(118, 75, 162, 0.8));
+  opacity: 0;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-year {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.project-content {
+  padding: 32px;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 0 0 16px 0;
+  line-height: 1.3;
+}
+
+.project-description {
+  color: #5a6c7d;
+  line-height: 1.6;
+  margin: 0 0 20px 0;
+  font-size: 0.95rem;
+}
+
+.project-tech {
+  margin-bottom: 24px;
+}
+
+.tech-tag {
+  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+  color: #e65100;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: 1px solid rgba(230, 81, 0, 0.2);
+}
+
+.project-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.project-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  border: none;
+  cursor: pointer;
+}
+
+.project-link.secondary {
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  color: #1565c0;
+  box-shadow: 0 4px 15px rgba(21, 101, 192, 0.2);
+}
+
+.project-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.project-link.secondary:hover {
+  box-shadow: 0 6px 20px rgba(21, 101, 192, 0.3);
+}
+
+.project-link svg {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease;
+}
+
+.project-link:hover svg {
+  transform: scale(1.1);
+}
+
+.projects-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 32px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-4px);
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 8px;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.stat-label {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .project-actions {
+    flex-direction: column;
+  }
+  
+  .projects-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .stat-number {
+    font-size: 2.5rem;
+  }
+}

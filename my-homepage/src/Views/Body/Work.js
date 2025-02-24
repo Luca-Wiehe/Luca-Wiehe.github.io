@@ -1,23 +1,28 @@
-import Timeline from '../../UiComponents/Timeline';
+import React from 'react';
+import AnimatedTimeline from '../../UiComponents/AnimatedTimeline';
 import workData from '../../Constants/work.json';
+import './Work.css';
 
 const Work = () => {
-   const workWithJSX = workData.work.map(entry => ({
-      ...entry,
-      description: entry.description.includes('<span') ? (
-         <>
-            {entry.description.split(/<span.*?>|<\/span>/).map((text, i) =>
-               i % 2 === 0 ? text : <span key={i} className="highlight">{text}</span>
-            )}
-         </>
-      ) : entry.description
-   }));
+  // Transform work data to match timeline format
+  const transformedWorkData = workData.work.map(item => ({
+    ...item,
+    img: `logos/${item.src}`,
+    organization: item.organization
+  }));
 
-   return (
-      <>
-         <Timeline title="Work Experience" entries={workWithJSX} />
-      </>
-   );
+  return (
+    <div className="work-page">
+      <div className="page-header">
+        <h1 className="page-title">Work Experience</h1>
+        <p className="page-subtitle">
+          Professional experience across technology, research, and development roles
+        </p>
+      </div>
+      
+      <AnimatedTimeline data={transformedWorkData} type="work" />
+    </div>
+  );
 };
 
 export default Work;

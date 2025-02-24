@@ -1,0 +1,24 @@
+{
+    "publications": [
+      {
+        "title": "DCSEG: Decoupled 3D Open-Set Segmentation using Gaussian Splatting",
+        "authors": "Luis Wiedmann, Luca Wiehe, David Rozenberszki",
+        "venue": "CVPR 2025 Workshop: Open-World 3D Scene Understanding with Foundation Models",
+        "year": "2025",
+        "type": "Workshop",
+        "abstract": "We present DCSEG, a novel approach for decoupled 3D open-set segmentation that leverages Gaussian Splatting for efficient and accurate scene understanding in open-world scenarios.",
+        "tags": ["Computer Vision", "3D Segmentation", "Gaussian Splatting", "Open-Set Learning"],
+        "link": "#"
+      },
+      {
+        "title": "Interdisciplinary Analysis of European Researchers Using NLP",
+        "authors": "Luca Wiehe",
+        "venue": "Bachelor's Thesis, Technical University of Munich",
+        "year": "2023",
+        "type": "Unpublished",
+        "abstract": "This thesis presents a novel approach to analyzing the interdisciplinary nature of European researchers using Natural Language Processing techniques. The study examines collaboration patterns and research diversity across various academic disciplines.",
+        "tags": ["NLP", "Research Analysis", "Interdisciplinary Studies"],
+        "link": "#"
+      }
+    ]
+  }
