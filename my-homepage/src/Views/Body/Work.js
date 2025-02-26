@@ -1,5 +1,5 @@
 import React from 'react';
-import AnimatedTimeline from '../../UiComponents/AnimatedTimeline';
+import WorkTimeline from '../../UiComponents/WorkTimeline';
 import workData from '../../Constants/work.json';
 import './Work.css';
 
@@ -20,7 +20,7 @@ const Work = () => {
         </p>
       </div>
       
-      <AnimatedTimeline data={transformedWorkData} type="work" />
+      <WorkTimeline data={transformedWorkData} />
     </div>
   );
 };

@@ -2,7 +2,7 @@
     "publications": [
       {
         "title": "DCSEG: Decoupled 3D Open-Set Segmentation using Gaussian Splatting",
-        "authors": "Luis Wiedmann, Luca Wiehe, David Rozenberszki",
+        "authors": "Luis Wiedmann*, Luca Wiehe*, David Rozenberszki",
         "venue": "CVPR 2025 Workshop: Open-World 3D Scene Understanding with Foundation Models",
         "year": "2025",
         "type": "Workshop",
