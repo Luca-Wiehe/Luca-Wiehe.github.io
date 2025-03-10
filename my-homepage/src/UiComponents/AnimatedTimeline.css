@@ -177,7 +177,7 @@
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, #667eea, #764ba2);
+  background: linear-gradient(90deg, #1e3a8a, #3674b5);
   border-radius: 16px 16px 0 0;
 }
 
@@ -233,7 +233,7 @@
 
 .type-badge {
   display: inline-block;
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(135deg, #1e3a8a, #3674b5);
   color: white;
   padding: 4px 12px;
   border-radius: 12px;

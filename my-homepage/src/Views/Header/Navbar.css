@@ -98,7 +98,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.2), rgba(118, 75, 162, 0.2));
+  background: linear-gradient(135deg, rgba(30, 58, 138, 0.2), rgba(54, 116, 181, 0.2));
   border-radius: 25px;
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -116,7 +116,7 @@
 }
 
 .navbar.scrolled .navbar-link::before {
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(135deg, #1e3a8a, #3674b5);
 }
 
 .navbar.scrolled .navbar-link:hover {
@@ -125,16 +125,16 @@
 
 .navbar-link.active {
   color: #ffffff;
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.8), rgba(118, 75, 162, 0.8));
+  background: linear-gradient(135deg, rgba(30, 58, 138, 0.8), rgba(54, 116, 181, 0.8));
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 4px 20px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 4px 20px rgba(30, 58, 138, 0.3);
 }
 
 .navbar.scrolled .navbar-link.active {
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(135deg, #1e3a8a, #3674b5);
   color: white;
-  box-shadow: 0 4px 20px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 4px 20px rgba(30, 58, 138, 0.4);
 }
 
 .mobile-menu-toggle {
@@ -218,12 +218,12 @@
   }
 
   .navbar-link:hover {
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: linear-gradient(135deg, #1e3a8a, #3674b5);
     color: white;
   }
 
   .navbar-link.active {
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: linear-gradient(135deg, #1e3a8a, #3674b5);
     color: white;
     border-radius: 0;
   }

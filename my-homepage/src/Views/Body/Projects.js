@@ -70,20 +70,6 @@ const Projects = () => {
           ))}
         </div>
         
-        <div className="projects-stats">
-          <div className="stat-card">
-            <div className="stat-number">{projectsArray.length}</div>
-            <div className="stat-label">Research Studies</div>
-          </div>
-          <div className="stat-card">
-            <div className="stat-number">5</div>
-            <div className="stat-label">Methodologies Explored</div>
-          </div>
-          <div className="stat-card">
-            <div className="stat-number">3</div>
-            <div className="stat-label">Years of Investigation</div>
-          </div>
-        </div>
       </div>
     </div>
   );

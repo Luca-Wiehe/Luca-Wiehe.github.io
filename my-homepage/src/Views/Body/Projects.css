@@ -1,6 +1,6 @@
 .projects-page {
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #1e3a8a 0%, #3674b5 100%);
   padding-top: 80px;
 }
 
@@ -124,7 +124,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(135deg, #1e3a8a, #3674b5);
   color: white;
   padding: 12px 20px;
   border-radius: 25px;

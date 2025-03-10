@@ -30,29 +30,23 @@ const AboutMe = () => {
               these questions through my Master's studies in Robotics, Cognition, Intelligence at TUM.
             </p>
             
-            <div className="hero-stats">
-              <div className="stat-item">
-                <div className="stat-number">5+</div>
-                <div className="stat-label">Years of Inquiry</div>
-              </div>
-              <div className="stat-item">
-                <div className="stat-number">15+</div>
-                <div className="stat-label">Research Projects</div>
-              </div>
-              <div className="stat-item">
-                <div className="stat-number">3</div>
-                <div className="stat-label">Research Contexts</div>
-              </div>
+            <div className="social-links">
+              <a href="https://github.com/Luca-Wiehe" target="_blank" rel="noopener noreferrer" className="social-link">
+                <img src="/images/logos/github-mark-white.png" alt="GitHub" className="social-icon" />
+                GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/lucawiehe/" target="_blank" rel="noopener noreferrer" className="social-link">
+                <img src="/images/logos/linkedin-logo.png" alt="LinkedIn" className="social-icon" />
+                LinkedIn
+              </a>
+              <a href="https://scholar.google.com/citations?user=hrh-irUAAAAJ" target="_blank" rel="noopener noreferrer" className="social-link">
+                <img src="/images/logos/scholar-logo.png" alt="Google Scholar" className="social-icon" />
+                Google Scholar
+              </a>
             </div>
           </div>
         </div>
         
-        <div className="floating-elements">
-          <div className="floating-icon" style={{'--delay': '0s'}}>🤖</div>
-          <div className="floating-icon" style={{'--delay': '2s'}}>🎓</div>
-          <div className="floating-icon" style={{'--delay': '4s'}}>💡</div>
-          <div className="floating-icon" style={{'--delay': '6s'}}>🚀</div>
-        </div>
       </div>
       
       <div className="about-content">
