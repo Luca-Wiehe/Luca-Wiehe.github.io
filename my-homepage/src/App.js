@@ -6,6 +6,7 @@ import Education from './Views/Body/Education';
 import Projects from './Views/Body/Projects';
 import Awards from './Views/Body/Awards';
 import AboutMe from './Views/Body/AboutMe';
+import Footer from './UiComponents/Footer';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 
 const ScrollToTop = () => {
@@ -33,6 +34,7 @@ function App() {
               <Route path="/awards" exact element={<Awards />} />
             </Routes>
           </div>
+          <Footer />
         </div>
       </div>
     </Router>
