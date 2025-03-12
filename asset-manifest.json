@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.372ffbeb.css",
-    "main.js": "/static/js/main.9a97ed64.js",
+    "main.css": "/static/css/main.149f75ab.css",
+    "main.js": "/static/js/main.9229ee3b.js",
     "static/media/Mona-Sans.woff2": "/static/media/Mona-Sans.955a87eb3766a32ac970.woff2",
     "index.html": "/index.html",
-    "main.372ffbeb.css.map": "/static/css/main.372ffbeb.css.map",
-    "main.9a97ed64.js.map": "/static/js/main.9a97ed64.js.map"
+    "main.149f75ab.css.map": "/static/css/main.149f75ab.css.map",
+    "main.9229ee3b.js.map": "/static/js/main.9229ee3b.js.map"
   },
   "entrypoints": [
-    "static/css/main.372ffbeb.css",
-    "static/js/main.9a97ed64.js"
+    "static/css/main.149f75ab.css",
+    "static/js/main.9229ee3b.js"
   ]
 }
