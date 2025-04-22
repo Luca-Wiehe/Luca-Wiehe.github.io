@@ -70,7 +70,6 @@
   border-radius: 16px;
   text-decoration: none;
   color: white;
-  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   border: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
 }
@@ -78,22 +77,15 @@
 .social-link:hover {
   background: rgba(102, 126, 234, 0.2);
   border-color: rgba(102, 126, 234, 0.4);
-  transform: translateX(8px);
-  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.2);
 }
 
 .social-icon {
   width: 24px;
   height: 24px;
   filter: none;
-  transition: all 0.3s ease;
   border-radius: 6px;
 }
 
-.social-link:hover .social-icon {
-  filter: brightness(1.2);
-  transform: scale(1.1);
-}
 
 .social-text {
   display: flex;
@@ -109,7 +101,6 @@
 .social-text small {
   color: rgba(255, 255, 255, 0.6);
   font-size: 0.8rem;
-  transition: color 0.3s ease;
 }
 
 .social-link:hover .social-text small {
@@ -150,7 +141,6 @@
   position: absolute;
   border-radius: 50%;
   background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.05));
-  animation: float 20s ease-in-out infinite;
 }
 
 .decoration-circle:nth-child(1) {
@@ -158,7 +148,6 @@
   height: 200px;
   top: -100px;
   right: -100px;
-  animation-delay: 0s;
 }
 
 .decoration-circle:nth-child(2) {
@@ -166,7 +155,6 @@
   height: 150px;
   bottom: -75px;
   left: -75px;
-  animation-delay: 7s;
 }
 
 .decoration-circle:nth-child(3) {
@@ -174,15 +162,8 @@
   height: 100px;
   top: 50%;
   left: 20%;
-  animation-delay: 14s;
 }
 
-@keyframes float {
-  0%, 100% { transform: translateY(0px) rotate(0deg); }
-  25% { transform: translateY(-20px) rotate(5deg); }
-  50% { transform: translateY(-40px) rotate(0deg); }
-  75% { transform: translateY(-20px) rotate(-5deg); }
-}
 
 @media (max-width: 768px) {
   .footer-content {

@@ -54,41 +54,12 @@ const Publications = () => {
     <div className="publications-page">
       <div className="page-header">
         <h1 className="page-title">Research</h1>
-        <p className="page-subtitle">
-          Advancing the frontiers of robotics through vision, language, and autonomous behavior research
-        </p>
       </div>
       
       <div className="publications-container">
         {renderPublicationSection('Conference Papers', conferencePublications)}
         {renderPublicationSection('Workshop Papers', workshopPublications)}
         {renderPublicationSection('Unpublished Work', unpublishedPublications)}
-        
-        <div className="research-interests">
-          <h2>Research Interests</h2>
-          <div className="interests-grid">
-            <div className="interest-item">
-              <div className="interest-icon">🤖</div>
-              <h4>Autonomous Robotics</h4>
-              <p>Developing robots capable of independent operation in complex environments</p>
-            </div>
-            <div className="interest-item">
-              <div className="interest-icon">👁️</div>
-              <h4>Computer Vision for Robotics</h4>
-              <p>Enabling robots to perceive, understand, and navigate their visual environment</p>
-            </div>
-            <div className="interest-item">
-              <div className="interest-icon">💬</div>
-              <h4>Natural Language for Robots</h4>
-              <p>Developing robotic systems that can understand and respond to human language</p>
-            </div>
-            <div className="interest-item">
-              <div className="interest-icon">🦾</div>
-              <h4>Robot Manipulation</h4>
-              <p>Advancing dexterous robotic manipulation and interaction with physical objects</p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );

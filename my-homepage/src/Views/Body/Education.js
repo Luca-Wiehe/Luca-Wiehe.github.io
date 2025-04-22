@@ -7,10 +7,7 @@ const Education = () => {
   return (
     <div className="education-page">
       <div className="page-header">
-        <h1 className="page-title">Academic Formation</h1>
-        <p className="page-subtitle">
-          Intellectual development through diverse scholarly environments
-        </p>
+        <h1 className="page-title">Education</h1>
       </div>
       
       <AnimatedTimeline data={educationData.education} type="education" />

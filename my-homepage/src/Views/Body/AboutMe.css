@@ -10,8 +10,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 80px 20px 20px;
+  padding: 120px 20px 60px;
   position: relative;
+  box-sizing: border-box;
 }
 
 .hero-content {
@@ -42,7 +43,6 @@
   object-fit: cover;
   border: 6px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease;
 }
 
 .profile-ring {
@@ -51,20 +51,10 @@
   left: -15px;
   right: -15px;
   bottom: -15px;
-  border: 3px solid transparent;
+  border: 3px solid rgba(255, 255, 255, 0.3);
   border-radius: 50%;
-  background: linear-gradient(45deg, #ffffff, #e3f2fd, #ffffff);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: exclude;
-  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  mask-composite: exclude;
-  animation: rotate 6s linear infinite;
 }
 
-@keyframes rotate {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
 
 .hero-text {
   color: white;
@@ -104,9 +94,10 @@
 
 .social-links {
   display: flex;
-  gap: 32px;
-  margin-top: 40px;
+  gap: 24px;
+  margin-top: 32px;
   justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .social-link {
@@ -122,15 +113,12 @@
   background: rgba(255, 255, 255, 0.1);
   border: 2px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
-  transition: all 0.3s ease;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .social-link:hover {
   background: rgba(255, 255, 255, 0.2);
   border-color: rgba(255, 255, 255, 0.4);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   color: #fff;
 }
 
@@ -145,8 +133,9 @@
 
 .about-content {
   background: linear-gradient(135deg, #ffffff, #f8f9fa);
-  padding: 80px 20px;
+  padding: 60px 20px 80px;
   position: relative;
+  min-height: auto;
 }
 
 .about-content::before {
@@ -214,7 +203,6 @@
     0 20px 60px rgba(0, 0, 0, 0.1),
     0 8px 25px rgba(0, 0, 0, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   position: relative;
   overflow: hidden;
 }
@@ -230,17 +218,10 @@
   border-radius: 20px 20px 0 0;
 }
 
-.skill-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 
-    0 30px 80px rgba(0, 0, 0, 0.15),
-    0 12px 35px rgba(0, 0, 0, 0.12);
-}
 
 .skill-icon {
   font-size: 3rem;
   margin-bottom: 20px;
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
 }
 
 .skill-card h4 {
@@ -258,20 +239,47 @@
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+  .hero-section {
+    padding: 100px 20px 50px;
+  }
+  
+  .hero-content {
+    gap: 60px;
+  }
+  
+  .profile-image-wrapper {
+    width: 240px;
+    height: 240px;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+  }
+}
+
 @media (max-width: 768px) {
+  .hero-section {
+    padding: 80px 16px 40px;
+    min-height: auto;
+  }
+  
   .hero-content {
     grid-template-columns: 1fr;
     gap: 40px;
     text-align: center;
+    max-width: 100%;
   }
   
   .profile-image-wrapper {
     width: 200px;
     height: 200px;
+    margin: 0 auto;
   }
   
   .hero-title {
     font-size: 2.5rem;
+    line-height: 1.2;
   }
   
   .hero-subtitle {
@@ -280,25 +288,82 @@
   
   .hero-description {
     font-size: 1.1rem;
+    line-height: 1.6;
   }
   
   .social-links {
     justify-content: center;
-    gap: 20px;
+    gap: 16px;
     flex-wrap: wrap;
+    margin-top: 32px;
   }
   
   .social-link {
-    font-size: 1rem;
+    font-size: 0.95rem;
     padding: 10px 16px;
+  }
+  
+  .about-content {
+    padding: 40px 16px 60px;
   }
   
   .skills-grid {
     grid-template-columns: 1fr;
     gap: 24px;
+    margin-top: 32px;
   }
   
   .content-section h3, .skills-section h3 {
     font-size: 2rem;
+    margin-bottom: 24px;
+  }
+  
+  .content-section, .skills-section {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 60px 12px 30px;
+  }
+  
+  .profile-image-wrapper {
+    width: 180px;
+    height: 180px;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.25rem;
+  }
+  
+  .social-links {
+    gap: 12px;
+  }
+  
+  .social-link {
+    font-size: 0.9rem;
+    padding: 8px 14px;
+  }
+  
+  .social-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .content-section h3, .skills-section h3 {
+    font-size: 1.75rem;
+  }
+  
+  .skill-card {
+    padding: 24px 20px;
+  }
+  
+  .about-content {
+    padding: 30px 12px 50px;
   }
 }

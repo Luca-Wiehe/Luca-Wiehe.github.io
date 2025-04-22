@@ -21,13 +21,8 @@ const AboutMe = () => {
             <h1 className="hero-title">
               Hi, I'm <span className="highlight">Luca Wiehe</span>
             </h1>
-            <h2 className="hero-subtitle">
-              Robotics Researcher
-            </h2>
             <p className="hero-description">
-              Investigating how robots can perceive their environment, understand human 
-              language, and act meaningfully in the physical world. Currently exploring 
-              these questions through my Master's studies in Robotics, Cognition, Intelligence at TUM.
+              I'm a Robotics Master's Student at TU Munich, currently visiting Oxford VGG for my Master's Thesis
             </p>
             
             <div className="social-links">
@@ -50,24 +45,9 @@ const AboutMe = () => {
       </div>
       
       <div className="about-content">
-        <div className="content-section">
-          <h3>My Story</h3>
-          <p>
-            My research stems from a fundamental curiosity about how robots can bridge 
-            the gap between digital computation and physical reality—how they can see 
-            and understand their surroundings, comprehend human communication, and 
-            perform meaningful actions in the world.
-          </p>
-          <p>
-            At the Technical University of Munich, my Master's research in Robotics, 
-            Cognition, Intelligence focuses on developing robotic systems that can 
-            perceive through vision, understand through language, and act with purpose 
-            in complex physical environments.
-          </p>
-        </div>
         
         <div className="skills-section">
-          <h3>Research Focus</h3>
+          <h3>Research Interests</h3>
           <div className="skills-grid">
             <div className="skill-card">
               <div className="skill-icon">🤖</div>

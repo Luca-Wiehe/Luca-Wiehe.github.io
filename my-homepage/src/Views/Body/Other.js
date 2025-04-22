@@ -34,9 +34,6 @@ const Other = () => {
     <div className="other-page">
       <div className="page-header">
         <h1 className="page-title">What I Do for Fun</h1>
-        <p className="page-subtitle">
-          Here's what keeps me busy when I'm not working on robotics
-        </p>
       </div>
       
       <div className="other-container">

@@ -14,9 +14,6 @@ const Projects = () => {
     <div className="projects-page">
       <div className="page-header">
         <h1 className="page-title">Fun Projects</h1>
-        <p className="page-subtitle">
-          Developing robotic systems with advanced vision, language understanding, and manipulation capabilities
-        </p>
       </div>
       
       <div className="projects-container">

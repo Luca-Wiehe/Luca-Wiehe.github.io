@@ -15,9 +15,6 @@ const Work = () => {
     <div className="work-page">
       <div className="page-header">
         <h1 className="page-title">Work Experience</h1>
-        <p className="page-subtitle">
-          Professional experience across technology, research, and development roles
-        </p>
       </div>
       
       <WorkTimeline data={transformedWorkData} />

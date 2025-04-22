@@ -7,7 +7,6 @@
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   padding: 0;
 }
 
@@ -32,12 +31,8 @@
   display: flex;
   flex-direction: column;
   text-decoration: none;
-  transition: all 0.3s ease;
 }
 
-.navbar-logo:hover {
-  transform: translateY(-2px);
-}
 
 .logo-text {
   font-size: 1.5rem;
@@ -45,7 +40,6 @@
   color: #ffffff;
   font-family: 'Mona Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-  transition: color 0.3s ease;
 }
 
 .navbar.scrolled .logo-text {
@@ -60,7 +54,6 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-top: -2px;
-  transition: color 0.3s ease;
 }
 
 .navbar.scrolled .logo-subtitle {
@@ -81,7 +74,6 @@
   font-size: 0.95rem;
   padding: 8px 16px;
   border-radius: 25px;
-  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
@@ -101,7 +93,6 @@
   background: linear-gradient(135deg, rgba(30, 58, 138, 0.2), rgba(54, 116, 181, 0.2));
   border-radius: 25px;
   opacity: 0;
-  transition: opacity 0.3s ease;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   z-index: -1;
@@ -150,7 +141,6 @@
   height: 3px;
   background: rgba(255, 255, 255, 0.9);
   margin: 3px 0;
-  transition: all 0.3s ease;
   border-radius: 2px;
 }
 
@@ -158,17 +148,8 @@
   background: #2c3e50;
 }
 
-.mobile-menu-toggle.active span:nth-child(1) {
-  transform: rotate(45deg) translate(7px, 7px);
-}
 
-.mobile-menu-toggle.active span:nth-child(2) {
-  opacity: 0;
-}
 
-.mobile-menu-toggle.active span:nth-child(3) {
-  transform: rotate(-45deg) translate(7px, -7px);
-}
 
 @media (max-width: 768px) {
   .navbar-container {
@@ -192,7 +173,6 @@
     transform: translateY(-100%);
     opacity: 0;
     visibility: hidden;
-    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   }
