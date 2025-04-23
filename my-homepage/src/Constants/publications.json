@@ -8,7 +8,8 @@
         "type": "Workshop",
         "abstract": "We present DCSEG, a novel approach for decoupled 3D open-set segmentation that leverages Gaussian Splatting for efficient and accurate scene understanding in open-world scenarios.",
         "tags": ["Computer Vision", "3D Segmentation", "Gaussian Splatting", "Open-Set Learning"],
-        "link": "#"
+        "pdf": "https://openaccess.thecvf.com/content/CVPR2025W/OpenSUN3D/papers/Wiedmann_DCSEG_Decoupled_3D_Open-Set_Segmentation_using_Gaussian_Splatting_CVPRW_2025_paper.pdf",
+        "code": "https://github.com/lusxvr/dcseg"
       },
       {
         "title": "Interdisciplinary Analysis of European Researchers Using NLP",
@@ -18,7 +19,8 @@
         "type": "Unpublished",
         "abstract": "This thesis presents a novel approach to analyzing the interdisciplinary nature of European researchers using Natural Language Processing techniques. The study examines collaboration patterns and research diversity across various academic disciplines.",
         "tags": ["NLP", "Research Analysis", "Interdisciplinary Studies"],
-        "link": "#"
+        "pdf": "",
+        "code": ""
       }
     ]
   }

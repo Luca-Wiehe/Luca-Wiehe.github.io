@@ -125,6 +125,7 @@
 
 .publication-actions {
   display: flex;
+  gap: 12px;
   justify-content: flex-end;
 }
 
@@ -142,19 +143,43 @@
   box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
 }
 
+.action-button.secondary {
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  color: #1565c0;
+  box-shadow: 0 4px 15px rgba(21, 101, 192, 0.2);
+}
+
 .action-button:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
 }
 
+.action-button.secondary:hover {
+  box-shadow: 0 6px 20px rgba(21, 101, 192, 0.3);
+}
+
 .action-button svg {
   width: 16px;
   height: 16px;
-  transition: transform 0.3s ease;
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
 }
 
-.action-button:hover svg {
-  transform: translate(2px, -2px);
+.action-button svg path {
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.action-button:not(.secondary) svg path {
+  stroke: white;
+}
+
+.action-button.secondary svg path {
+  stroke: #1565c0;
 }
 
 .research-interests {

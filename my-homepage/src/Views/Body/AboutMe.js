@@ -50,22 +50,30 @@ const AboutMe = () => {
           <h3>Research Interests</h3>
           <div className="skills-grid">
             <div className="skill-card">
-              <div className="skill-icon">🤖</div>
+              <div className="skill-icon">
+                <img src="/images/3d-icons/research-autonomous.png" alt="Autonomous Robotics" />
+              </div>
               <h4>Autonomous Robotics</h4>
               <p>Developing robots that can operate independently in complex environments</p>
             </div>
             <div className="skill-card">
-              <div className="skill-icon">👁️</div>
+              <div className="skill-icon">
+                <img src="/images/3d-icons/research-vision.png" alt="Robot Vision" />
+              </div>
               <h4>Robot Vision</h4>
               <p>Enabling robots to see, understand, and navigate their visual environment</p>
             </div>
             <div className="skill-card">
-              <div className="skill-icon">💬</div>
+              <div className="skill-icon">
+                <img src="/images/3d-icons/research-communication.png" alt="Human-Robot Communication" />
+              </div>
               <h4>Human-Robot Communication</h4>
               <p>Investigating how robots can understand and respond to human language</p>
             </div>
             <div className="skill-card">
-              <div className="skill-icon">🦾</div>
+              <div className="skill-icon">
+                <img src="/images/3d-icons/research-manipulation.png" alt="Robot Manipulation" />
+              </div>
               <h4>Robot Manipulation</h4>
               <p>Developing dexterous robotic systems for complex physical tasks</p>
             </div>

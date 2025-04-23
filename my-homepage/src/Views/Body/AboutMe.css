@@ -133,7 +133,7 @@
 
 .about-content {
   background: linear-gradient(135deg, #ffffff, #f8f9fa);
-  padding: 60px 20px 80px;
+  padding: 0px 20px 80px;
   position: relative;
   min-height: auto;
 }
@@ -147,6 +147,22 @@
   height: 100px;
   background: linear-gradient(135deg, #ffffff, #f8f9fa);
   clip-path: ellipse(70% 100px at 50% 0%);
+}
+
+@media (max-width: 768px) {
+  .about-content::before {
+    top: -30px;
+    height: 80px;
+    clip-path: ellipse(80% 80px at 50% 0%);
+  }
+}
+
+@media (max-width: 480px) {
+  .about-content::before {
+    top: -20px;
+    height: 60px;
+    clip-path: ellipse(90% 60px at 50% 0%);
+  }
 }
 
 .content-section, .skills-section {
@@ -222,6 +238,17 @@
 .skill-icon {
   font-size: 3rem;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+.skill-icon img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
 }
 
 .skill-card h4 {
@@ -260,51 +287,53 @@
 
 @media (max-width: 768px) {
   .hero-section {
-    padding: 80px 16px 40px;
-    min-height: auto;
+    padding: 140px 16px 80px;
+    min-height: fit-content;
+    height: auto;
   }
   
   .hero-content {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 30px;
     text-align: center;
     max-width: 100%;
   }
   
   .profile-image-wrapper {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     margin: 0 auto;
   }
   
   .hero-title {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     line-height: 1.2;
   }
   
   .hero-subtitle {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   
   .hero-description {
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.6;
+    margin-bottom: 24px;
   }
   
   .social-links {
     justify-content: center;
-    gap: 16px;
+    gap: 12px;
     flex-wrap: wrap;
-    margin-top: 32px;
+    margin-top: 20px;
   }
   
   .social-link {
-    font-size: 0.95rem;
-    padding: 10px 16px;
+    font-size: 0.9rem;
+    padding: 8px 14px;
   }
   
   .about-content {
-    padding: 40px 16px 60px;
+    padding: 0px 16px 60px;
   }
   
   .skills-grid {
@@ -325,34 +354,47 @@
 
 @media (max-width: 480px) {
   .hero-section {
-    padding: 60px 12px 30px;
+    padding: 120px 12px 80px;
+    min-height: fit-content;
+    height: auto;
+  }
+  
+  .hero-content {
+    gap: 24px;
   }
   
   .profile-image-wrapper {
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
   }
   
   .hero-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    margin-bottom: 12px;
   }
   
   .hero-subtitle {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
+  }
+  
+  .hero-description {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
   }
   
   .social-links {
-    gap: 12px;
+    gap: 10px;
+    margin-top: 16px;
   }
   
   .social-link {
-    font-size: 0.9rem;
-    padding: 8px 14px;
+    font-size: 0.85rem;
+    padding: 6px 12px;
   }
   
   .social-icon {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
   }
   
   .content-section h3, .skills-section h3 {
@@ -364,6 +406,58 @@
   }
   
   .about-content {
-    padding: 30px 12px 50px;
+    padding: 0px 12px 50px;
+  }
+}
+
+/* Extra small screens and landscape phones */
+@media (max-width: 400px), (max-height: 600px) and (orientation: landscape) {
+  .hero-section {
+    padding: 110px 10px 80px;
+    min-height: fit-content;
+    height: auto;
+  }
+  
+  .hero-content {
+    gap: 20px;
+  }
+  
+  .profile-image-wrapper {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .profile-ring {
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border-width: 2px;
+  }
+  
+  .hero-title {
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+  }
+  
+  .hero-description {
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+  }
+  
+  .social-links {
+    gap: 8px;
+    margin-top: 12px;
+  }
+  
+  .social-link {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    gap: 8px;
+  }
+  
+  .social-icon {
+    width: 16px;
+    height: 16px;
   }
 }
