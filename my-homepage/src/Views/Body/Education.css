@@ -1,6 +1,6 @@
 .education-page {
   min-height: 100vh;
-  background: linear-gradient(135deg, #1e3a8a 0%, #3674b5 100%);
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
   padding-top: 80px;
 }
 
@@ -19,7 +19,7 @@
   margin: 0 0 16px 0;
   font-family: 'Mona Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  background: linear-gradient(135deg, #ffffff, #e3f2fd);
+  background: #ffffff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

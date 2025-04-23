@@ -51,10 +51,10 @@ const Footer = () => {
         
         <div className="footer-bottom">
           <div className="footer-copyright">
-            <p>&copy; 2024 Luca Wiehe. All rights reserved.</p>
+            <p>&copy; 2025 Luca Wiehe. All rights reserved.</p>
           </div>
           <div className="footer-tech">
-            <p>Built with React & Creative Design</p>
+            <p>Built with React, HTML, and CSS</p>
           </div>
         </div>
       </div>

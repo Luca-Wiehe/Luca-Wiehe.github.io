@@ -1,6 +1,6 @@
 .other-page {
   min-height: 100vh;
-  background: linear-gradient(135deg, #1e3a8a 0%, #3674b5 100%);
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
   padding-top: 80px;
 }
 
@@ -28,7 +28,7 @@
   transform: translateX(-50%);
   width: 60px;
   height: 4px;
-  background: linear-gradient(135deg, #ffffff, #e3f2fd);
+  background: #ffffff;
   border-radius: 2px;
 }
 
@@ -83,7 +83,7 @@
 }
 
 .achievement-date {
-  background: linear-gradient(135deg, #1e3a8a, #3674b5);
+  background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
   color: white;
   padding: 4px 12px;
   border-radius: 12px;
@@ -134,7 +134,7 @@
 
 .skill-progress {
   height: 100%;
-  background: linear-gradient(135deg, #1e3a8a, #3674b5);
+  background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
   border-radius: 4px;
   transition: width 2s ease-in-out;
   position: relative;
@@ -216,6 +216,17 @@
 .interest-icon {
   font-size: 2.5rem;
   margin-bottom: 16px;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+.interest-icon img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
 }
 

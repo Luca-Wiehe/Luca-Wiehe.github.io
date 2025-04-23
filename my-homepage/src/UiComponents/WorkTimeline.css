@@ -91,7 +91,7 @@
   width: 48px;
   height: 48px;
   border-radius: 12px;
-  background: linear-gradient(135deg, #1e3a8a 0%, #3674b5 100%);
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -140,7 +140,7 @@
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, #1e3a8a, #3674b5);
+  background: linear-gradient(90deg, #1a1a1a, #2d2d2d);
   border-radius: 16px 16px 0 0;
 }
 
@@ -187,7 +187,7 @@
 
 .work-type-badge {
   display: inline-block;
-  background: linear-gradient(135deg, #1e3a8a, #3674b5);
+  background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
   color: white;
   padding: 4px 12px;
   border-radius: 12px;

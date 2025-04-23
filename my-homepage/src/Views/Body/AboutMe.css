@@ -1,6 +1,6 @@
 .about-me-page {
   min-height: 100vh;
-  background: linear-gradient(135deg, #1e3a8a 0%, #3674b5 100%);
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
   position: relative;
   overflow: hidden;
 }
@@ -188,7 +188,7 @@
   transform: translateX(-50%);
   width: 60px;
   height: 4px;
-  background: linear-gradient(135deg, #1e3a8a, #3674b5);
+  background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
   border-radius: 2px;
 }
 
@@ -230,7 +230,7 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, #1e3a8a, #3674b5, #1e3a8a);
+  background: linear-gradient(90deg, #1a1a1a, #333333, #1a1a1a);
   border-radius: 20px 20px 0 0;
 }
 
