@@ -55,6 +55,17 @@ const Projects = () => {
                       View Code
                     </a>
                   )}
+                  {project.presentationLink && (
+                    <a 
+                      href={project.presentationLink} 
+                      className="project-link secondary"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      📄
+                      Presentation
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

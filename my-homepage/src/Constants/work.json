@@ -1,13 +1,22 @@
 {
     "work": [
         {
+            "src": "huawei_logo.svg",
+            "start": "12/2025",
+            "end": "05/2026",
+            "organization": "Huawei Research",
+            "title": "Research Engineer",
+            "type": "Internship",
+            "description": "As a Research Engineer, I investigated methods to enable <span>Generative Image Editing</span> for HDR images. Current <span>Diffusion Models</span> and <span>Flow Matching Models</span> are fundamentally limited by their pre-training on internet-scale 8-bit sRGB data. My research focused on overcoming this information-theoretic bottleneck, developing techniques that extend state-of-the-art generative models beyond the constraints of standard dynamic range."
+        },
+        {
             "src": "mercedes_logo.svg",
             "start": "05/2023",
             "end": "09/2023",
             "organization": "Mercedes-Benz",
             "title": "Research Engineer",
             "type": "Internship",
-            "description": "During my internship, I am responsible for researching and implementing different statistical approaches in production planning. Those approaches include <span>Simulated Annealing</span> as well as <span>Reinforcement Learning</span> with both classical and <span>Graph Neural Networks</span>."
+            "description": "During my internship, I was responsible for researching and implementing adaptive, learning-based approaches in production planning. Those approaches included <span>Reinforcement Learning</span> with both classical and <span>Graph Neural Networks</span>."
         },
         {
             "src": "tum_logo.svg",

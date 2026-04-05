@@ -1,6 +1,7 @@
 {
     "Safe Robot Control": {
        "repositoryLink": "",
+       "presentationLink": "",
        "img": "proj_rpchi.png",
        "year": "2025",
        "description": "Programming a KUKA iiwa robot using safe control paradigms",
@@ -8,12 +9,14 @@
     },
     "Diffusion Policies": {
        "repositoryLink": "https://github.com/Luca-Wiehe/tum-adlr-04.git",
+       "presentationLink": "",
        "img": "proj_diffusion-policy.png",
        "year": "2025",
        "description": "Enhancing diffusion-based imitation learning with Residual Reinforcement Learning"
     },
     "Facial Image Generation": {
        "repositoryLink": "",
+       "presentationLink": "",
        "img": "proj_mlmi.png",
        "year": "2025",
        "description": "Conditioning facial image generation to incorporate medical conditions",
@@ -21,42 +24,56 @@
     },
     "DCSEG": {
        "repositoryLink": "https://github.com/lusxvr/dcseg.git",
+       "presentationLink": "",
        "img": "proj_dcseg.png",
        "year": "2025",
        "description": "Decoupled 3D semantic segmentation in Gaussian Splatting reconstructions"
     },
    "Arpeggiate": {
       "repositoryLink": "",
+      "presentationLink": "",
       "img": "proj_arpeggiate.png",
       "year": "2025",
       "description": "An iOS app that uses spaced repetition to help users learn instruments faster"
    },
    "RAG Summarization": {
       "repositoryLink": "https://github.com/Luca-Wiehe/rag_summarization",
+      "presentationLink": "",
       "src": "proj_rag.png",
       "year": "2024",
       "description": "Reducing hallucinations of LLMs in summarizations by augmenting context using RAG"
    },
+   "LeRobot Hackathon": {
+      "repositoryLink": "https://github.com/grach0v/lerobot",
+      "presentationLink": "/pdfs/lerobot_hack.pdf",
+      "src": "proj_lerobot.png",
+      "year": "2025",
+      "description": "Model-Context-Protocol for Vision-Language-Action models to add thinking and planning capabilities"
+   },
    "GovMatch": {
       "repositoryLink": "https://github.com/Luca-Wiehe/govtech_hackathon_24",
+      "presentationLink": "",
       "src": "proj_govmatch.png",
       "year": "2024",
       "description": "GovTech Hackathon 2024. Help finding the right people within the Swiss government"
    },
    "Semantus": {
       "repositoryLink": "https://github.com/Luca-Wiehe/semantus_web",
+      "presentationLink": "",
       "src": "proj_semantus.png",
       "year": "2022",
       "description": "An NLP-based game where players have to guess a word based on semantic similarities"
    }, 
    "Recommending Papers": {
       "repositoryLink": "https://github.com/Luca-Wiehe/RecommendingPapers",
+      "presentationLink": "",
       "src": "proj_recommender.png",
       "year": "2022",
       "description": "An NLP-based approach to recommend papers from other fields of study"
    }, 
    "LETO": {
       "repositoryLink": "",
+      "presentationLink": "",
       "src": "proj_leto.png",
       "year": "2022",
       "description": "A full-stack web application for TUM students to find study groups in times of Covid"
