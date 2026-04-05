@@ -22,7 +22,7 @@ const AboutMe = () => {
               Hi, I'm <span className="highlight">Luca Wiehe</span>
             </h1>
             <p className="hero-description">
-              I'm a Robotics Master's Student at TU Munich, currently visiting Oxford VGG for my Master's Thesis
+              I'm a Robotics and Computer Vision Research Engineer at Huawei Research in Zurich
             </p>
             
             <div className="social-links">
