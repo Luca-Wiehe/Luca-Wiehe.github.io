@@ -12,8 +12,16 @@ const SmartLink = ({ href, children }) =>
     <a href={href} target="_blank" rel="noopener noreferrer">{children}</a>
   );
 
+// A link target is either a URL or a click handler (e.g. toggling a BibTeX block)
+const LinkItem = ({ name, target }) =>
+  typeof target === 'function' ? (
+    <button type="button" className="entry-link-button" onClick={target}>{name}</button>
+  ) : (
+    <SmartLink href={target}>{name}</SmartLink>
+  );
+
 // One row of a minimalist list: thumbnail on the left, title, metadata lines and text links on the right
-const EntryRow = ({ thumbnail, fallback, label, title, href, links = [], description, children }) => (
+const EntryRow = ({ thumbnail, fallback, label, title, href, links = [], description, footer, children }) => (
   <li className="entry-row">
     <div className="entry-thumb">
       {thumbnail ? (
@@ -30,15 +38,16 @@ const EntryRow = ({ thumbnail, fallback, label, title, href, links = [], descrip
       {children}
       {links.length > 0 && (
         <p className="entry-links">
-          {links.map(([name, url], index) => (
+          {links.map(([name, target], index) => (
             <React.Fragment key={name}>
-              <SmartLink href={url}>{name}</SmartLink>
+              <LinkItem name={name} target={target} />
               {index < links.length - 1 && <span className="entry-sep">/</span>}
             </React.Fragment>
           ))}
         </p>
       )}
       {description && <p className="entry-description">{description}</p>}
+      {footer}
     </div>
   </li>
 );

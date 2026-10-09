@@ -20,6 +20,41 @@
   font-weight: 600;
 }
 
+.pub-bibtex {
+  position: relative;
+  margin-top: 12px;
+}
+
+.pub-bibtex pre {
+  margin: 0;
+  padding: 14px 16px;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  overflow-x: auto;
+}
+
+.pub-bibtex-copy {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.75);
+  border-radius: 4px;
+  padding: 2px 10px;
+  font: inherit;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.pub-bibtex-copy:hover {
+  color: #ffffff;
+}
+
 .list-section-title {
   font-size: 1rem;
   font-weight: 600;

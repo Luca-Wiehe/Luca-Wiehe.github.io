@@ -3,7 +3,14 @@
   "publications": [
     {
       "title": "Scaling Latent Motor Adaptation to Coordinated Bimanual Manipulation",
-      "authors": ["Seung-Bin Joo", "Alessandro Albini", "Luca Wiehe", "Perla Maiolino", "Daniel Olmeda Reino", "João F. Henriques"],
+      "authors": [
+        "Seung-Bin Joo",
+        "Alessandro Albini",
+        "Luca Wiehe",
+        "Perla Maiolino",
+        "Daniel Olmeda Reino",
+        "João F. Henriques"
+      ],
       "venue": "IROS 2026 Workshop on Bimanual Manipulation",
       "year": "2026",
       "type": "Paper",
@@ -11,11 +18,19 @@
       "tldr": "Extending Rapid Motor Adaptation to dual-arm manipulation, with zero-shot sim-to-real transfer on a dual Franka lifting task.",
       "links": {
         "paper": "https://openreview.net/forum?id=Z3bwZmJGsD"
-      }
+      },
+      "bibtex": "@inproceedings{joo2026scaling,\n  title     = {Scaling Latent Motor Adaptation to Coordinated Bimanual Manipulation},\n  author    = {Joo, Seung-Bin and Albini, Alessandro and Wiehe, Luca and Maiolino, Perla and Olmeda Reino, Daniel and Henriques, Jo{\\~a}o F.},\n  booktitle = {IROS 2026 Workshop on Bimanual Manipulation},\n  year      = {2026},\n  url       = {https://openreview.net/forum?id=Z3bwZmJGsD}\n}"
     },
     {
       "title": "CondVLA: Investigating Domain-Conditioned Hypernetwork Adaptation for Vision-Language-Action Models",
-      "authors": ["Luca Wiehe", "Seung-Bin Joo", "Markus Wulfmeier", "Daniel Cremers", "Qadeer Khan", "João Henriques"],
+      "authors": [
+        "Luca Wiehe",
+        "Seung-Bin Joo",
+        "Markus Wulfmeier",
+        "Daniel Cremers",
+        "Qadeer Khan",
+        "João Henriques"
+      ],
       "venue": "ECCV 2026 Workshop",
       "year": "2026",
       "type": "Paper",
@@ -23,11 +38,16 @@
       "tldr": "A hypernetwork that generates LoRA weights from camera extrinsics, adapting a frozen VLA to large viewpoint shifts.",
       "links": {
         "paper": "https://openreview.net/forum?id=DzFmPGmVDQ"
-      }
+      },
+      "bibtex": "@inproceedings{wiehe2026condvla,\n  title     = {{CondVLA}: Investigating Domain-Conditioned Hypernetwork Adaptation for Vision-Language-Action Models},\n  author    = {Wiehe, Luca and Joo, Seung-Bin and Wulfmeier, Markus and Cremers, Daniel and Khan, Qadeer and Henriques, Jo{\\~a}o},\n  booktitle = {European Conference on Computer Vision (ECCV) Workshops},\n  year      = {2026},\n  url       = {https://openreview.net/forum?id=DzFmPGmVDQ}\n}"
     },
     {
       "title": "DCSEG: Decoupled 3D Open-Set Segmentation using Gaussian Splatting",
-      "authors": ["Luis Wiedmann*", "Luca Wiehe*", "David Rozenberszki"],
+      "authors": [
+        "Luis Wiedmann*",
+        "Luca Wiehe*",
+        "David Rozenberszki"
+      ],
       "venue": "CVPR 2025 Workshop on Open-World 3D Scene Understanding (OpenSUN3D)",
       "year": "2025",
       "type": "Paper",
@@ -35,13 +55,15 @@
       "tldr": "Decoupled 3D open-set segmentation of Gaussian Splatting reconstructions using 2D foundation models.",
       "links": {
         "paper": "https://openaccess.thecvf.com/content/CVPR2025W/OpenSUN3D/papers/Wiedmann_DCSEG_Decoupled_3D_Open-Set_Segmentation_using_Gaussian_Splatting_CVPRW_2025_paper.pdf",
-        "arXiv": "https://arxiv.org/abs/2412.10972",
         "code": "https://github.com/lusxvr/dcseg"
-      }
+      },
+      "bibtex": "@InProceedings{Wiedmann_2025_CVPR,\n  author    = {Wiedmann, Luis and Wiehe, Luca and Rozenberszki, David},\n  title     = {DCSEG: Decoupled 3D Open-Set Segmentation using Gaussian Splatting},\n  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},\n  month     = {June},\n  year      = {2025},\n  pages     = {5256-5265}\n}"
     },
     {
       "title": "Interdisciplinary Analysis of European Researchers Using NLP",
-      "authors": ["Luca Wiehe"],
+      "authors": [
+        "Luca Wiehe"
+      ],
       "venue": "Bachelor's Thesis, Technical University of Munich",
       "year": "2023",
       "type": "Thesis",

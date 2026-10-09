@@ -89,8 +89,18 @@
   text-decoration: none;
 }
 
-.entry-links a:hover {
+.entry-links a:hover,
+.entry-link-button:hover {
   text-decoration: underline;
+}
+
+.entry-link-button {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: #8ab4f8;
+  cursor: pointer;
 }
 
 .entry-sep {

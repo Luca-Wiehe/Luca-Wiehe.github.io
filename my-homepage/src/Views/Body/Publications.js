@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import publicationsData from '../../Constants/publications.json';
 import EntryRow from '../../UiComponents/EntryRow';
 import './Publications.css';
@@ -18,17 +18,43 @@ const renderAuthors = (authors) =>
     );
   });
 
+const BibtexBlock = ({ bibtex }) => {
+  const [copied, setCopied] = useState(false);
+
+  const copy = () => {
+    navigator.clipboard.writeText(bibtex).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1500);
+    });
+  };
+
+  return (
+    <div className="pub-bibtex">
+      <button type="button" className="pub-bibtex-copy" onClick={copy}>{copied ? 'Copied' : 'Copy'}</button>
+      <pre>{bibtex}</pre>
+    </div>
+  );
+};
+
 const PublicationRow = ({ pub }) => {
-  const links = Object.entries(pub.links || {}).filter(([, url]) => url);
+  const [showBibtex, setShowBibtex] = useState(false);
+  const urls = Object.entries(pub.links || {}).filter(([, url]) => url);
+  // Order: paper / bibtex / code
+  const links = [
+    ...urls.filter(([name]) => name === 'paper'),
+    ...(pub.bibtex ? [['bibtex', () => setShowBibtex((open) => !open)]] : []),
+    ...urls.filter(([name]) => name !== 'paper'),
+  ];
 
   return (
     <EntryRow
       thumbnail={pub.thumbnail}
       fallback={pub.year}
       title={pub.title}
-      href={links.length > 0 ? links[0][1] : undefined}
+      href={urls.length > 0 ? urls[0][1] : undefined}
       links={links}
       description={pub.tldr}
+      footer={showBibtex && <BibtexBlock bibtex={pub.bibtex} />}
     >
       <p className="pub-authors">{renderAuthors(pub.authors)}</p>
       <p className="entry-meta">{pub.venue && <><em>{pub.venue}</em>, </>}{pub.year}</p>
