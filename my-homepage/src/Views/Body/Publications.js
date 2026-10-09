@@ -57,7 +57,11 @@ const PublicationRow = ({ pub }) => {
       footer={showBibtex && <BibtexBlock bibtex={pub.bibtex} />}
     >
       <p className="pub-authors">{renderAuthors(pub.authors)}</p>
-      <p className="entry-meta">{pub.venue && <><em>{pub.venue}</em>, </>}{pub.year}</p>
+      <p className="entry-meta">
+        {pub.venue && <em>{pub.venue}</em>}
+        {/* Most venue names already include the year */}
+        {!pub.venue?.includes(pub.year) && <>{pub.venue && ', '}{pub.year}</>}
+      </p>
     </EntryRow>
   );
 };

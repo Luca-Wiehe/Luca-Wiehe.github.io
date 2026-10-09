@@ -31,7 +31,7 @@
         "Qadeer Khan",
         "João Henriques"
       ],
-      "venue": "ECCV 2026 Workshop",
+      "venue": "ECCV 2026 Workshop on Embodied Multimodal Reasoning in Physical Environments",
       "year": "2026",
       "type": "Paper",
       "thumbnail": "/images/research/condvla.jpg",
@@ -39,7 +39,7 @@
       "links": {
         "paper": "https://openreview.net/forum?id=DzFmPGmVDQ"
       },
-      "bibtex": "@inproceedings{wiehe2026condvla,\n  title     = {{CondVLA}: Investigating Domain-Conditioned Hypernetwork Adaptation for Vision-Language-Action Models},\n  author    = {Wiehe, Luca and Joo, Seung-Bin and Wulfmeier, Markus and Cremers, Daniel and Khan, Qadeer and Henriques, Jo{\\~a}o},\n  booktitle = {European Conference on Computer Vision (ECCV) Workshops},\n  year      = {2026},\n  url       = {https://openreview.net/forum?id=DzFmPGmVDQ}\n}"
+      "bibtex": "@inproceedings{wiehe2026condvla,\n  title     = {{CondVLA}: Investigating Domain-Conditioned Hypernetwork Adaptation for Vision-Language-Action Models},\n  author    = {Wiehe, Luca and Joo, Seung-Bin and Wulfmeier, Markus and Cremers, Daniel and Khan, Qadeer and Henriques, Jo{\\~a}o},\n  booktitle = {ECCV 2026 Workshop on Embodied Multimodal Reasoning in Physical Environments},\n  year      = {2026},\n  url       = {https://openreview.net/forum?id=DzFmPGmVDQ}\n}"
     },
     {
       "title": "DCSEG: Decoupled 3D Open-Set Segmentation using Gaussian Splatting",
