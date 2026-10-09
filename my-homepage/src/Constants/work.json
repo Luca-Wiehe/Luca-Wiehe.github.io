@@ -1,12 +1,21 @@
 {
     "work": [
         {
+            "src": "hexagon_robotics_logo.svg",
+            "start": "08/2026",
+            "end": "Present",
+            "organization": "Hexagon Robotics",
+            "title": "ML Engineer - Robot Learning",
+            "type": "Full Time",
+            "description": "As an ML Engineer in Robot Learning, I train models for <span>Robot Manipulation</span>. I specialize in <span>Imitation Learning</span>, teaching robots manipulation skills from human demonstrations."
+        },
+        {
             "src": "huawei_logo.svg",
             "start": "12/2025",
-            "end": "05/2026",
+            "end": "07/2026",
             "organization": "Huawei Research",
             "title": "Research Engineer",
-            "type": "Internship",
+            "type": "Internship, then Full Time",
             "description": "As a Research Engineer, I investigated methods to enable <span>Generative Image Editing</span> for HDR images. Current <span>Diffusion Models</span> and <span>Flow Matching Models</span> are fundamentally limited by their pre-training on internet-scale 8-bit sRGB data. My research focused on overcoming this information-theoretic bottleneck, developing techniques that extend state-of-the-art generative models beyond the constraints of standard dynamic range."
         },
         {
