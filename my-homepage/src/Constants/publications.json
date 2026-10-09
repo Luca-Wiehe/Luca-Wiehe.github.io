@@ -1,26 +1,53 @@
 {
-    "publications": [
-      {
-        "title": "DCSEG: Decoupled 3D Open-Set Segmentation using Gaussian Splatting",
-        "authors": "Luis Wiedmann*, Luca Wiehe*, David Rozenberszki",
-        "venue": "CVPR 2025 Workshop: Open-World 3D Scene Understanding with Foundation Models",
-        "year": "2025",
-        "type": "Workshop",
-        "abstract": "We present DCSEG, a novel approach for decoupled 3D open-set segmentation that leverages Gaussian Splatting for efficient and accurate scene understanding in open-world scenarios.",
-        "tags": ["Computer Vision", "3D Segmentation", "Gaussian Splatting", "Open-Set Learning"],
-        "pdf": "https://openaccess.thecvf.com/content/CVPR2025W/OpenSUN3D/papers/Wiedmann_DCSEG_Decoupled_3D_Open-Set_Segmentation_using_Gaussian_Splatting_CVPRW_2025_paper.pdf",
-        "code": "https://github.com/lusxvr/dcseg"
-      },
-      {
-        "title": "Interdisciplinary Analysis of European Researchers Using NLP",
-        "authors": "Luca Wiehe",
-        "venue": "Bachelor's Thesis, Technical University of Munich",
-        "year": "2023",
-        "type": "Unpublished",
-        "abstract": "This thesis presents a novel approach to analyzing the interdisciplinary nature of European researchers using Natural Language Processing techniques. The study examines collaboration patterns and research diversity across various academic disciplines.",
-        "tags": ["NLP", "Research Analysis", "Interdisciplinary Studies"],
-        "pdf": "",
-        "code": ""
+  "self": "Luca Wiehe",
+  "publications": [
+    {
+      "title": "Scaling Latent Motor Adaptation to Coordinated Bimanual Manipulation",
+      "authors": ["Seung-Bin Joo", "Alessandro Albini", "Luca Wiehe", "Perla Maiolino", "Daniel Olmeda Reino", "João F. Henriques"],
+      "venue": "IROS 2026 Workshop on Bimanual Manipulation",
+      "year": "2026",
+      "type": "Paper",
+      "thumbnail": "/images/research/bimanual.jpg",
+      "tldr": "Extending Rapid Motor Adaptation to dual-arm manipulation, with zero-shot sim-to-real transfer on a dual Franka lifting task.",
+      "links": {
+        "paper": "https://openreview.net/forum?id=Z3bwZmJGsD"
       }
-    ]
-  }
+    },
+    {
+      "title": "CondVLA: Investigating Domain-Conditioned Hypernetwork Adaptation for Vision-Language-Action Models",
+      "authors": ["Luca Wiehe", "Seung-Bin Joo", "Markus Wulfmeier", "Daniel Cremers", "Qadeer Khan", "João Henriques"],
+      "venue": "ECCV 2026 Workshop",
+      "year": "2026",
+      "type": "Paper",
+      "thumbnail": "/images/research/condvla.jpg",
+      "tldr": "A hypernetwork that generates LoRA weights from camera extrinsics, adapting a frozen VLA to large viewpoint shifts.",
+      "links": {
+        "paper": "https://openreview.net/forum?id=DzFmPGmVDQ"
+      }
+    },
+    {
+      "title": "DCSEG: Decoupled 3D Open-Set Segmentation using Gaussian Splatting",
+      "authors": ["Luis Wiedmann*", "Luca Wiehe*", "David Rozenberszki"],
+      "venue": "CVPR 2025 Workshop on Open-World 3D Scene Understanding (OpenSUN3D)",
+      "year": "2025",
+      "type": "Paper",
+      "thumbnail": "/images/projects/proj_dcseg.png",
+      "tldr": "Decoupled 3D open-set segmentation of Gaussian Splatting reconstructions using 2D foundation models.",
+      "links": {
+        "paper": "https://openaccess.thecvf.com/content/CVPR2025W/OpenSUN3D/papers/Wiedmann_DCSEG_Decoupled_3D_Open-Set_Segmentation_using_Gaussian_Splatting_CVPRW_2025_paper.pdf",
+        "arXiv": "https://arxiv.org/abs/2412.10972",
+        "code": "https://github.com/lusxvr/dcseg"
+      }
+    },
+    {
+      "title": "Interdisciplinary Analysis of European Researchers Using NLP",
+      "authors": ["Luca Wiehe"],
+      "venue": "Bachelor's Thesis, Technical University of Munich",
+      "year": "2023",
+      "type": "Thesis",
+      "thumbnail": "",
+      "tldr": "Analyzing collaboration patterns and research diversity of European researchers with NLP.",
+      "links": {}
+    }
+  ]
+}

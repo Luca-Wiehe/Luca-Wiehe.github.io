@@ -21,7 +21,7 @@ const Navbar = () => {
     { path: '/education', label: 'Education' },
     { path: '/publications', label: 'Research' },
     { path: '/work', label: 'Work' },
-    { path: '/projects', label: 'Projects' },
+    { path: '/projects', label: 'Projects & Blog', alsoActiveOn: '/blog/' },
     { path: '/other', label: 'Other' }
   ];
 
@@ -42,7 +42,7 @@ const Navbar = () => {
             <Link
               key={item.path}
               to={item.path}
-              className={`navbar-link ${location.pathname === item.path ? 'active' : ''}`}
+              className={`navbar-link ${location.pathname === item.path || (item.alsoActiveOn && location.pathname.startsWith(item.alsoActiveOn)) ? 'active' : ''}`}
               onClick={() => setIsMobileMenuOpen(false)}
             >
               {item.label}

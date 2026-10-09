@@ -1,75 +1,69 @@
 import React from 'react';
 import publicationsData from '../../Constants/publications.json';
+import EntryRow from '../../UiComponents/EntryRow';
 import './Publications.css';
 
-const Publications = () => {
-  const conferencePublications = publicationsData.publications.filter(pub => pub.type === 'Conference');
-  const workshopPublications = publicationsData.publications.filter(pub => pub.type === 'Workshop');
-  const unpublishedPublications = publicationsData.publications.filter(pub => pub.type === 'Unpublished');
+const byYearDesc = (a, b) => Number(b.year) - Number(a.year);
 
-  const renderPublicationSection = (title, publications) => {
-    if (publications.length === 0) return null;
-    
+// Bold the site owner's name; keep markers like "*" attached to it
+const renderAuthors = (authors) =>
+  authors.map((author, index) => {
+    const name = author.replace(/[*†]+$/, '');
+    const isSelf = name === publicationsData.self;
     return (
-      <div className="publication-section">
-        <h2 className="section-title">{title}</h2>
-        <div className="publications-grid">
-          {publications.map((pub, index) => (
-            <div key={index} className="publication-card">
-              <div className="publication-header">
-                <div className="publication-type">{pub.type}</div>
-                <div className="publication-year">{pub.year}</div>
-              </div>
-              
-              <h3 className="publication-title">{pub.title}</h3>
-              <p className="publication-authors">{pub.authors}</p>
-              <p className="publication-venue">{pub.venue}</p>
-              
-              <div className="publication-abstract">
-                <p>{pub.abstract}</p>
-              </div>
-              
-              <div className="publication-tags">
-                {pub.tags.map((tag, tagIndex) => (
-                  <span key={tagIndex} className="tag">{tag}</span>
-                ))}
-              </div>
-              
-              <div className="publication-actions">
-                {pub.pdf && (
-                  <a href={pub.pdf} className="action-button secondary" target="_blank" rel="noopener noreferrer">
-                    <span>PDF</span>
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
-                  </a>
-                )}
-                {pub.code && (
-                  <a href={pub.code} className="action-button" target="_blank" rel="noopener noreferrer">
-                    <span>Code</span>
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
-                  </a>
-                )}
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
+      <React.Fragment key={index}>
+        {isSelf ? <strong>{author}</strong> : author}
+        {index < authors.length - 1 && ', '}
+      </React.Fragment>
     );
-  };
+  });
+
+const PublicationRow = ({ pub }) => {
+  const links = Object.entries(pub.links || {}).filter(([, url]) => url);
+
+  return (
+    <EntryRow
+      thumbnail={pub.thumbnail}
+      fallback={pub.year}
+      title={pub.title}
+      href={links.length > 0 ? links[0][1] : undefined}
+      links={links}
+      description={pub.tldr}
+    >
+      <p className="pub-authors">{renderAuthors(pub.authors)}</p>
+      <p className="entry-meta">{pub.venue && <><em>{pub.venue}</em>, </>}{pub.year}</p>
+    </EntryRow>
+  );
+};
+
+const Publications = () => {
+  const papers = publicationsData.publications.filter(pub => pub.type !== 'Thesis').sort(byYearDesc);
+  const theses = publicationsData.publications.filter(pub => pub.type === 'Thesis').sort(byYearDesc);
+  const hasEqualContribution = publicationsData.publications.some(pub =>
+    pub.authors.some(author => author.endsWith('*'))
+  );
 
   return (
     <div className="publications-page">
       <div className="page-header">
         <h1 className="page-title">Research</h1>
       </div>
-      
+
       <div className="publications-container">
-        {renderPublicationSection('Conference Papers', conferencePublications)}
-        {renderPublicationSection('Workshop Papers', workshopPublications)}
-        {renderPublicationSection('Unpublished Work', unpublishedPublications)}
+        <ul className="entry-list">
+          {papers.map((pub) => <PublicationRow key={pub.title} pub={pub} />)}
+        </ul>
+
+        {theses.length > 0 && (
+          <>
+            <h2 className="list-section-title">Theses</h2>
+            <ul className="entry-list">
+              {theses.map((pub) => <PublicationRow key={pub.title} pub={pub} />)}
+            </ul>
+          </>
+        )}
+
+        {hasEqualContribution && <p className="pub-footnote">* Equal contribution</p>}
       </div>
     </div>
   );
